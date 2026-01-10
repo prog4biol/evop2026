@@ -1,4 +1,4 @@
-# Python for EVOP 2020
+# Python for EVOP 2026
 
 
 
@@ -87,8 +87,8 @@ Note:
 First Python Commands:
 
 ```python
->>> print("Hello, EVOP2020!")
-Hello, EVOP2020!
+>>> print("Hello, EVOP2026!")
+Hello, EVOP2026!
 ```
 
 > Note: `print` is a function. Function names are followed by (), so formally, the function is `print()`
@@ -108,7 +108,7 @@ Hello, EVOP2020!
 File Contents:  
 
 ```python
-print ("Hello, EVOP2020!")
+print ("Hello, EVOP2026!")
 ```
 
 #### Running Python Scripts
@@ -124,7 +124,7 @@ Execute the Python script like this (% represents the prompt)
 This produces the following result:
 
 ```bash
-Hello, EVOP2020!
+Hello, EVOP2026!
 ```
 
 #### A quicker/better way to run python scripts
@@ -149,14 +149,14 @@ The file test.py now looks like this
 
 ```python
 #!/usr/bin/env python3
-print ("Hello, EVOP2020!")
+print ("Hello, EVOP2026!")
 ```
 
 Now you can simply type the name of the script to run it. Like this
 
 ```bash
 % ./test.py
-Hello, EVOP2020!
+Hello, EVOP2026!
 
 ```
 
@@ -236,7 +236,7 @@ The first line of a script starting with `#!` is a special example of a comment 
 #!/usr/bin/env python3
 
 # this is my first script
-print ("Hello, EVOP2020!") # this line prints output to the screen
+print ("Hello, EVOP2026!") # this line prints output to the screen
 ```
 
 #### Blank Lines
@@ -2670,8 +2670,8 @@ I/O stands for input/output. The in and out refer to getting data into and out o
 You should be well versed in writing to the screen. We have been using the `print()` function to do this.  
 
 ```python
->>> print ("Hello, EVOP2020!")
-Hello, EVOP2020!
+>>> print ("Hello, EVOP2026!")
+Hello, EVOP2026!
 ```
 
 > Remember this example from one of our first lessons?
@@ -3438,7 +3438,7 @@ Or you can use a for loop to do something to each match.
 ![try it](images/Try-It-Now.jpg)
 
 1. Create a script in your text editor.
-2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2020/master/files/sequence_data.txt) 
+2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/sequence_data.txt) 
 3. loop through each line of the file
 4. store the gene name in a variable
 5. store the sequence in a variable
@@ -3522,7 +3522,7 @@ Sometimes you want to find a pattern and use it in the replacement.
 
 1. Create a script in your text editor.
 
-2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2020/master/files/sequence_data.txt) 
+2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/sequence_data.txt) 
 
 3. loop through each line of the file
 
@@ -3735,7 +3735,7 @@ def gc_content(dna='A'):   # give our function a name and parameter 'dna'
 ![try it](images/Try-It-Now.jpg)
 
 1. Create a script that contains a gc_content function.
-2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2020/master/files/sequence_data.txt)
+2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/sequence_data.txt)
 3. loop through each line of the file
 4. store the gene name in a variable
 5. store the sequence in a variable
@@ -4126,7 +4126,7 @@ Dictionaries of dictionaries is my favorite!! You can do so many useful things w
 
 2. How would you print and retrieve the nucleotide composition of gene1?
 
-3. CHALLENGE QUESTION: Take a mulit-FASTA [trinity.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2020/master/files/trinity.nt.fa) file from user input and calculate the nucleotide composition for each sequence. Use a datastructure to keep count. Print out each sequence name and its compostion in this format `seqName\tA_count\tT_count\tG_count\C_count`
+3. CHALLENGE QUESTION: Take a mulit-FASTA [trinity.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/trinity.nt.fa) file from user input and calculate the nucleotide composition for each sequence. Use a datastructure to keep count. Print out each sequence name and its compostion in this format `seqName\tA_count\tT_count\tG_count\C_count`
 
    1. Parse the FASTA to get each complete sequence.
    2. Use `count()` to get the count of each A, T, G, C.
@@ -4484,7 +4484,7 @@ AGC
 
 ### Read a FASTA file
 
-We were learning how to read a fasta file line by line. SeqIO.parse() is the main method for reading from almost any file format. We'll need a fasta file. We can use [seq.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2020/master/files/seq.nt.fa) which looks like this
+We were learning how to read a fasta file line by line. SeqIO.parse() is the main method for reading from almost any file format. We'll need a fasta file. We can use [seq.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/seq.nt.fa) which looks like this
 
 ```
 >seq1
@@ -4566,7 +4566,7 @@ Here's a script to read fasta records and print out some information
 
 ```python
 #!/usr/bin/env python3
-# assumes we are in the evop2020 directory
+# assumes we are in the evop2026 directory
 from Bio import SeqIO
 for seq_record in SeqIO.parse("files/seq.nt.fa", "fasta"):   # give filename and format
   print('ID',seq_record.id)
@@ -4761,7 +4761,7 @@ To parse the output, you'll write something like this
 ![try it](images/Try-It-Now.jpg)
 
 1. Run BLAST with output in XML format. 
-   1. Query = [query.fa](https://raw.githubusercontent.com/prog4biol/evop2020/master/files/query.fa)
+   1. Query = [query.fa](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/query.fa)
    2. Program = blastx
    3. Database = Swissprot/UniProt
       1. Already downloaded, path:
