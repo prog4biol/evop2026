@@ -22,8 +22,8 @@ We only have 2 days. I am going to teach you the basics and more importantly tea
 
 ## Installing Python
 
-1. [Install Anaconda](https://conda.io/docs/user-guide/install/index.html)
-2. [Install Python](https://anaconda.org/anaconda/python)
+1. Install Python and package manager: it depends ... we use minimamba and mini-forge
+
 
 ## Python References
 
