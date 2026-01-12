@@ -1,7 +1,7 @@
 # Python for EVOP 2026
 
 
-
+Created by:
 Sofia Robb  Ph.D.<br>Genomic Scientist @ Stowers Institute for Medical Research<br>[https://planosphere.stowers.org](https://planosphere.stowers.org), [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/28072387)<br>[https://cuttingclass.stowers.org](https://cuttingclass.stowers.org), [The American Biology Teacher](http://abt.ucpress.edu/content/79/3/208)<br>[https://simrbase.stowers.org](https://simrbase.stowers.org), [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5805609/)<br>[https://smedgd.stowers.org](https://smedgd.stowers.org), [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4867232/)
 
 
