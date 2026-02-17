@@ -25,7 +25,8 @@ We only have 2 days. I am going to teach you the basics and more importantly tea
 
 ## Installing Python
 
-1. Install Python and package manager: it depends ... we use minimamba and mini-forge
+1. Install Python and package manager: it depends ... we use minimamba and mini-forge at University of Virginia
+   We should have it installed on the system here at EVOP
 
 
 ## Python References
