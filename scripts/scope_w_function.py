@@ -1,4 +1,4 @@
-#!/usr/bin/end python3
+#!/usr/bin/env python3
 
 def set_local_x_to_five(x):
   print('Inside def')
