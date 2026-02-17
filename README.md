@@ -1,5 +1,8 @@
 # Python for EVOP2026
-### Sofia Robb  
+### Deb Triant
+### University of Virginia
+
+### Created by Sofia Robb  
 
 [Lecture Material](EVOP_Python_2026.md) [[pdf](EVOP_Python_2026.pdf)] [[markdown](EVOP_Python_2026.md)]   
 [Lecture Files](files)  
