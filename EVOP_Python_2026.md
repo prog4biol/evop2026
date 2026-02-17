@@ -1,6 +1,6 @@
 # Python for EVOP 2026
 
-Deb Triant  
+Deb Triant<br>
 University of Virginia  
 dtriant@virginia.edu  
 
