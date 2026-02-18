@@ -1554,6 +1554,30 @@ You will often put f-strings inside print functions.
 This sequence: TGAACATCTAAAAGATGAAGTTT is 23 nucleotides long and is found in Brca1.
 ```
 
+
+I had to include this next example because we are working in the very-cool Pi Building!
+
+Let's round a floating point number to decimal places, starting with more than needed (the default is 6 places). Note that the function rounds to the nearest decimal place, but not always exactly the way you expect because of the way computers represent decimals with 1s and 0s.
+
+```
+>>> f'{3.141592653589793:f}'
+'3.141593'   # note this is converted to a string, useful for printing
+             # they are f-strings, after all, so this makes sense
+>>> f'{3.141592653589793:.4f}'
+'3.1416'
+>>> f'{3.141592653589793:.4f}'
+'3.14'
+```
+f-strings allow you to embed expressions inside string literals
+
+```
+>>> f'sum is {3+4}'
+'sum is 7'
+>>> f'sum is {3.1234+4.4324:.2f}'
+'sum is 7.56'
+```
+
+
 ![try it](images/Try-It-Now.jpg)
 
 1. Try out the `f-strings()` method.  Use the following string and the variables from the above example. Type it, don't copy it.
