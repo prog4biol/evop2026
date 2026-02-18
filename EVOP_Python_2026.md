@@ -1043,6 +1043,7 @@ Notes about quotes:
 
 - Single and double quotes are equivalent.  
 - A variable name inside quotes is just the string identifier, not the value stored inside the variable.
+- f'' or f-strings are useful for variable interpolation in python
 - Triple quotes are used before and after a string that spans multiple lines.  
 
 Use of quotation examples:  
