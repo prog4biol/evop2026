@@ -611,7 +611,7 @@ Operators are listed in order of precedence. Highest listed first. Not all the o
 | `&`                                      | Bitwise 'AND'                            |
 | `^` `\|`                                 | Bitwise exclusive 'OR' and regular 'OR'  |
 | `<=` `<` `>` `>=`                        | Comparison operators                     |
-| `==` `|=`                                | Equality operators                       |
+| `==` `\|=`                                | Equality operators                       |
 | `=` `%=` `/=` `//=` `-=` `+=` `*=` `**=` | Assignment operators                     |
 | `is`                                     | Identity operator                        |
 | `is not`                                 | Non-identity operator                    |
@@ -2417,13 +2417,13 @@ Building a dictionary one key/value at a time is akin to what we just saw when w
 
 #### Checking That Dictionary Keys Exist
 
-Python generates an error (NameError) if you try to access a key that does not exist.  
+Python generates an error (KeyError) if you try to access a key that does not exist.  
 
 ```python
   >>> print(genes['HDAC'])
   Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
-  NameError: name 'HDAC' is not defined
+  KeyError: name 'HDAC' is not defined
 ```
 
 #### Dictionary Operators
