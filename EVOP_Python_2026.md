@@ -357,10 +357,11 @@ months = ( 'Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep'
 #### Dictionary
 
 - Dictionaries are good for storing data that can be represented as a two-column table.
-- They store unordered collections of key/value pairs.
+- They store ordered collections of key/value pairs and maintain insertion order
 - A dictionary is enclosed in **curly braces**.
 - A colon is written between each key and value.
 - Commas separate key:value pairs.
+- Although they maintain order, they are still not indexable by position like lists
 
 ```python
 { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
@@ -2272,7 +2273,7 @@ Here is an example of using mathematical operators to generate a list:
 
 ### Dictionaries
 
-Dictionaries are another iterable, like a string and list. Unlike strings and lists, dictionaries are not a sequence, or in other words, they are unordered and the position is not important. 
+Dictionaries are another iterable, like a string and list. Unlike strings and lists, dictionaries are not a sequence. 
 
 Dictionaries are a collection of key/value pairs. In Python, each key is separated from its value by a colon (:), the items are separated by commas, and the whole thing is enclosed in curly braces. An empty dictionary without any items is written with just two curly braces, like this: `{}`
 
