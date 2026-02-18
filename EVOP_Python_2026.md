@@ -949,6 +949,28 @@ ValueError: math domain error
 1.70293863659264
 ```
 
+With Python's import system you can access all of the functions within that module. If you forget to import it and try to access one, you will get an error:
+
+```
+# using sqrt from the math module without importing it first
+print(sqrt(25))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sqrt' is not defined
+```
+
+**from...import**<br>
+We can also just import specific functions from the module rather than the entire module with the **from** keyword
+
+```
+# Importing only sqrt function of math modeule
+>>>from math import sqrt
+>>> print(sqrt(25))
+5.0
+```
+
+Rather than importing the whole math module, we just imported the sqrt function. Can be handy if you will only need one function from a module, especially if it's a big module
+
 ![try it](images/Try-It-Now.jpg)
 
 1. In the interactive interpreter try a few of the above examples with new values.
