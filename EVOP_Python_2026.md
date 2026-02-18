@@ -401,6 +401,8 @@ You need to import the sys module at the beginning of your script like this
 import sys
 ```
 
+Importing modules in Python gives you access to all of the codes within it (more below with the math module).
+
 Let's imagine we have a script called friends.py. If you write this on the command line:
 
 ```bash
