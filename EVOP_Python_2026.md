@@ -494,7 +494,7 @@ In Python we can write statements that perform mathematical calculations. To do 
 ![try it](images/Try-It-Now.jpg)
 
 1. In the interactive interpreter try a few of the above examples with new values.
-2. How would you use modulus '(%)' to determine if a number is odd or even? Try `3%2` and `10%2`.  Need help? [Google It](http://lmgtfy.com/?q=python3+modulus+even+odd).
+2. How would you use modulus '(%)' to determine if a number is odd or even? Try `3%2` and `10%2`.  Need help? [Check out the python docs](https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations).
 
 #### Assignment Operators
 
@@ -1525,7 +1525,7 @@ Since these are methods, be sure to use in this format string.method().
    ```
 
 
-2. Try the `join()` method. Join the list returned from your split with a string of double dashes ' - -'. Think carefully about this. `join()` is a **string method**. Is the list or the double dash a string? Which do you use to the right of the '.join'.    Need help? [Google it](http://lmgtfy.com/?q=python3+join).
+2. Try the `join()` method. Join the list returned from your split with a string of double dashes ' - -'. Think carefully about this. `join()` is a **string method**. Is the list or the double dash a string? Which do you use to the right of the '.join'.    Need help? [Check out the python docs](https://docs.python.org/3/library/stdtypes.html#str.join).
 
 #### String Formatting
 
@@ -2497,7 +2497,7 @@ If you want to print the contents of a dictionary, you probably want to sort the
 ![try it](images/Try-It-Now.jpg)
 
 1. Sort your dictionary from the last exercise. 
-2. Now sort by the sequences (values). Need help? [Google it.](http://lmgtfy.com/?q=python+3+sort+dictionary+by+value)
+2. Now sort by the sequences (values). Need help? [Check out the python docs.](https://docs.python.org/3/howto/sorting.html)
 
 #### Dictionary Functions
 
@@ -2526,7 +2526,7 @@ These functions work on several other data types too!
 ![try it](images/Try-It-Now.jpg)
 
 1. Return a list of gene names from your dictionary.
-2. Join your list on ', ' and print. Need Help? [Google it](http://lmgtfy.com/?q=python+3+join). [Read about `join() on TutorialsPoint`](https://www.tutorialspoint.com/python3/string_join.htm). Remember to think about where to place your string and your sequence (list).
+2. Join your list on ', ' and print. Need Help? [Check out the python docs](https://docs.python.org/3/library/stdtypes.html#str.join). [Read about `join() on TutorialsPoint`](https://www.tutorialspoint.com/python3/string_join.htm). Remember to think about where to place your string and your sequence (list).
 
 ### Sets
 
@@ -2700,7 +2700,7 @@ Hi
 ![try it](images/Try-It-Now.jpg)
 
 1. In a text editor, create a script that asks the user for their name. 
-2. Uppercase all the letters and print out the name. Need help? [Google it](http://lmgtfy.com/?q=python+3+uppercase+a+string) 
+2. Uppercase all the letters and print out the name. Need help? [Check out the python docs](https://docs.python.org/3/library/stdtypes.html#str.upper) 
 
 #### Reading from a File
 
