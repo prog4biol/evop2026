@@ -196,18 +196,13 @@ Python does not allow punctuation characters or other special characters such as
 The following is a list of Python keywords. These are special words that already have a purpose in python and therefore cannot be used as identifier names.
 
 ```
-and         exec        not
-as          finally     or
-assert      for         pass
-break       from        print
-class       global      raise
-continue    if          return
-def         import      try
-del         in          while
-elif        is          with
-else        lambda      yield
-except      list        str
-
+False       await       else        import      pass
+None        break       except      in          raise
+True        class       finally     is          return
+and         continue    for         lambda      try
+as          def         from        nonlocal    while
+assert      del         global      not         with
+async       elif        if          or          yield
 ```
 
 #### Lines and Indentation
@@ -616,7 +611,7 @@ Operators are listed in order of precedence. Highest listed first. Not all the o
 | `&`                                      | Bitwise 'AND'                            |
 | `^` `\|`                                 | Bitwise exclusive 'OR' and regular 'OR'  |
 | `<=` `<` `>` `>=`                        | Comparison operators                     |
-| `<>` `==` `!=`                           | Equality operators                       |
+| `==` `|=`                                | Equality operators                       |
 | `=` `%=` `/=` `//=` `-=` `+=` `*=` `**=` | Assignment operators                     |
 | `is`                                     | Identity operator                        |
 | `is not`                                 | Non-identity operator                    |
@@ -1752,7 +1747,7 @@ For these examples use: `nums = [1,2,3]` and `codons = [ 'atg' , 'aaa' , 'agg' ]
 
 | Method                    | Description                              | Example                                  |
 | ------------------------- | ---------------------------------------- | ---------------------------------------- |
-| `list.append(obj)`        | appends an object to the end of a list   | nums.append(9) ; print(nu,s) ; returns [1,2,3,9] |
+| `list.append(obj)`        | appends an object to the end of a list   | nums.append(9) ; print(nums) ; returns [1,2,3,9] |
 | `list.count(obj)`         | counts the occurrences of an object in a list | nums.count(2) returns 1                  |
 | `list.index(obj)`         | returns the lowest index where the given object is found | nums.index(2) returns 1                  |
 | `list.pop()`              | removes and returns the last value in the list. The list is now one element shorter | nums.pop() returns 3                     |
