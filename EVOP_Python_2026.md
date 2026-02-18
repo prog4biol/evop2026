@@ -1532,7 +1532,7 @@ Since these are methods, be sure to use in this format string.method().
 
 
 
-Strings can be formated using the  `format()` function. Pretty intuitive, but wait til you see the details! For example, if you want to include literal strings and variables in your print statement and do not want to concatenate or use multiple arguments in the `print()` function you can use string formatting.  
+Strings can be formated using the  `f-string()` function. For example, if you want to include literal strings and variables in your print statement and do not want to concatenate or use multiple arguments in the `print()` function you can use string formatting.  
 
 ```python
 >>> dna = 'TGAACATCTAAAAGATGAAGTTT'
