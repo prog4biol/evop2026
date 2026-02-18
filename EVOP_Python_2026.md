@@ -1533,25 +1533,19 @@ Since these are methods, be sure to use in this format string.method().
 
 
 
-Strings can be formated using the  `f-string()` function. For example, if you want to include literal strings and variables in your print statement and do not want to concatenate or use multiple arguments in the `print()` function you can use string formatting.  
+Strings can be formated using the  `f-strings()` function. For example, if you want to include literal strings and variables in your print statement and do not want to concatenate or use multiple arguments in the `print()` function you can use string formatting.  
 
 ```python
 >>> dna = 'TGAACATCTAAAAGATGAAGTTT'
 >>> dna_len = len(dna)
 >>> gene_name = 'Brc1'
->>> string = "This sequence: {} is {} nucleotides long and is found in {}."
->>> string.format(dna,dna_len,gene_name)
+>>> f'This sequence: {dna} is {dna_len} nucleotides long and is found in {gene_name}.'
 'This sequence: TGAACATCTAAAAGATGAAGTTT is 23 nucleotides long and is found in Brca1.'
->>> print(string) # string.format() does not alter string
-This sequence: {} is {} nucleotides long and is found in {}.
->>> new_string = string.format(dna,dna_len,gene_name)
->>> print(new_string)
-This sequence: TGAACATCTAAAAGATGAAGTTT is 23 nucleotides long and is found in Brca1.
 ```
 
-We put together the three variables and literal strings into a single string using the function `format()`. The original string is not altered, a new string is returned that incorporates the arguments. You can save the returned value in a new variable. Each `{}` is a placeholder for the strings that need to be inserted. 
+ We put together the three variables and literal strings into a single string using f-strings. A new string is returned that incorporates the arguments. You can save the returned value in a new variable. Each {} is a placeholder for the variable that needs to be inserted.
 
-Something nice about `format()` is that you can print int and string variable types without converting first.
+Something nice about `f-strings` is that you can print int and string variable types without converting first.
 
 You can also directly call the format function on a string inside a print function. Here are two examples
 
