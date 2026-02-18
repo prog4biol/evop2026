@@ -440,7 +440,7 @@ The user also supplies all the data the script needs on the command line so the 
 
 1. Using your text editor, create a new python script. Be sure to include `#!/usr/bin/env python3` on the very first line. Make sure you give the script a name that ends with '.py'
 2. Import the sys module by typing `import sys`.
-3. Create a variable called favAnimal and assign the first command line argument to this variable, using `sys.argv[1]`. Need help? [Google it.](http://lmgtfy.com/?q=python3+getting+arguments+from+the+command+line)
+3. Create a variable called favAnimal and assign the first command line argument to this variable, using `sys.argv[1]`. Need help? [Check out the python docs.](https://docs.python.org/3/library/sys.html#sys.argv)
 4. Create a variable called favGene and assign the second command line argument to this variable using `sys.argv[2]`.
 5. Print the two variables to the screen.
 
