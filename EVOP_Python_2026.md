@@ -40,7 +40,7 @@ We only have 2 days. I am going to teach you the basics and more importantly tea
 
 1. [TutorialsPoint](https://www.tutorialspoint.com/python3/)
 2. [Anaconda](https://anaconda.org/anaconda/python)
-3. [BioPython](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+3. [BioPython](https://biopython.org/docs/latest/Tutorial/index.html#htoc16)
 
 #### Practice
 The only way to retain the information you are learning is to practice. [Rosalind](http://rosalind.info/problems/locations/) has a nice collection of problem sets. 
@@ -1071,7 +1071,6 @@ Let's assign a string to a variable and print the variable.
 
 ```python
 >>>dna = 'ATG'
-ATG
 >>> print(dna)
 ATG
 ```
@@ -4367,9 +4366,9 @@ If we get no errors, biopython is installed correctly.
 
 [Getting started](http://biopython.org/wiki/Category%3AWiki_Documentation)
 
-[Biopython tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html#chapter:Bio.SeqIO)
+[Biopython tutorial](https://biopython.org/docs/latest/Tutorial/index.html#htoc16#chapter:Bio.SeqIO)
 
-[Complete tree of Biopython Classes](http://biopython.org/DIST/docs/api/Bio-module.html)
+[Complete tree of Biopython Classes](https://biopython.org/docs/latest/api/Bio.html)
 
 
 
@@ -4377,7 +4376,7 @@ If we get no errors, biopython is installed correctly.
 
 This is the core of biopython. And uses the Seq object. Seq is part of Bio. This is denoted Bio.Seq
 
-Visit biopython.org to read about [Sequence objects](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc16)
+Visit biopython.org to read about [Sequence objects](https://biopython.org/docs/latest/Tutorial/index.html#htoc16)
 
 ```python
 #!/usr/bin/env python3
@@ -4459,7 +4458,7 @@ parse(handle, format, alphabet=None)
 
 ```
 
-You can also visit biopythorg.org to get help on [Parsing or Reading Sequences](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc48)
+You can also visit biopythorg.org to get help on [Parsing or Reading Sequences](https://biopython.org/docs/latest/Tutorial/index.html#htoc16#htoc48)
 
 Lets try it out!
 
@@ -4573,7 +4572,7 @@ Seq('ATGCTAACCAAAGTTTCAGTTCGGACGTGTCGATGAGCGACGCTCAAAAAGGAA...GGT', SingleLetter
 
 ### Seq methods
 
-Visit biopython.org to read how [Sequences act like strings](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc18)
+Visit biopython.org to read how [Sequences act like strings](https://biopython.org/docs/latest/Tutorial/index.html#htoc16#htoc18)
 
 ```python
 seqobj.count("A")  # counts how many As are in sequence
