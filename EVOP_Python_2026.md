@@ -954,19 +954,26 @@ ValueError: math domain error
 
 Often times it is necessary to compare two numbers and find out if the first number is less than, equal to, or greater than the second.
 
-The simple function `cmp(x,y)` is not available in Python 3. 
-
-Use this idiom instead:  
-
-```python
-cmp = (x>y)-(x<y)
 ```
+if x > y:
+    cmp = 1
+elif x < y:
+    cmp = -1
+else:
+    cmp = 0
+````
 
 It returns three different values depending on x and y
 
 - if x<y -1 is returned
 - if x>y 1 is returned
 - x == y 0 is returned
+
+Here it is written as one line:
+
+```
+cmp = 1 if x > y else -1 if x < y else 0
+```
 
 ### Sequences
 
