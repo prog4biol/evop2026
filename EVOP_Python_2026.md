@@ -13,11 +13,11 @@ Sofia Robb  Ph.D.<br>Genomic Scientist @ Stowers Institute for Medical Research<
 
 ## Why Python?
 
-It really isn't a question of why are you learning Python, but why are you learning to script.  Learning one programming language make it easier for you to learn another. The basic concepts, like conditional statements and loops are the same in most languages. These are the concepts that *some* students struggle with at first. Popular thought is that Python is the best language for students to learn programming. I think you should learn what ever language you can get someone to help you learn. My personal favorite is Perl. I have been using it for the longest and can write a script very quickly. Python might be better a better choice if you are writing code with others on a large project. The modularity, classes, and object orientness of Python make this easier.
+It really isn't a question of why are you learning Python, but why are you learning to script.  Learning one programming language make it easier for you to learn another. The basic concepts, like conditional statements and loops are the same in most languages. These are the concepts that *some* students struggle with at first. Popular thought is that Python is the best language for students to learn programming. I think you should learn whatever language you can get someone to help you learn. My personal favorite is Perl. I have been using it for the longest and can write a script very quickly. Python might be a better choice if you are writing code with others on a large project. The modularity, classes, and object-orientness of Python make this easier.
 
 ## Why Script?
 
-As biologist we often need to run customized analyses or to reformat files. It is nice if we can do this when we want, rather than wait for someone else to do it for us. We also often have to repeat tasks over and over. Why do something hundreds of times when we can write one script to do these tasks for us. Scripting allows us to be independent, efficient, and have reproducible results.
+As biologists, we often need to run customized analyses or to reformat files. It is nice if we can do this when we want, rather than wait for someone else to do it for us. We also often have to repeat tasks over and over. Why do something hundreds of times when we can write one script to do these tasks for us. Scripting allows us to be independent, efficient, and have reproducible results.
 
 ## Teaching Format
 
@@ -73,9 +73,9 @@ Python has
 
 There are two versions of Python: Python 2 and Python 3. We will be using 3. This version fixes some of the problems with Python 2 and breaks some other things. A lot of code has already been written for Python 2 (it's older), but going forwards, more and more new code development will use Python 3.
 
-#### Interactive Interpretor
+#### Interactive Interpreter
 
-Python can be run one line at a time in an interactive interpretor. You can think of this as a Python shell. To launch the interpreter type the following into your terminal window:  
+Python can be run one line at a time in an interactive interpreter. You can think of this as a Python shell. To launch the interpreter type the following into your terminal window:  
 
 `% python3`    
 
@@ -245,7 +245,7 @@ print ("Hello, EVOP2026!") # this line prints output to the screen
 
 #### Blank Lines
 
-Blank lines are also important for increasing the readability of the code. You should separate pieces of code that go together with a blank line to make 'paragraphs' of code. Blank lines are ignored by the Python interpretor.
+Blank lines are also important for increasing the readability of the code. You should separate pieces of code that go together with a blank line to make 'paragraphs' of code. Blank lines are ignored by the Python interpreter.
 
 
 
@@ -590,7 +590,7 @@ False
 
 ![try it](images/Try-It-Now.jpg)
 
-1. Use the Interactive Interpretor to test to see if you can find an 'CAA' in the following DNA string:
+1. Use the Interactive interpreter to test to see if you can find an 'CAA' in the following DNA string:
 
    ```
    GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA
@@ -694,11 +694,11 @@ False
 
 ![try it](images/Try-It-Now.jpg)
 
-1. In the interpretor use `bool()` to test a variety of values like '', 0, 0.0, FALSE, false, True, true, 'True', 'False' to see if they evaluate to True or False.
+1. In the interpreter use `bool()` to test a variety of values like '', 0, 0.0, FALSE, false, True, true, 'True', 'False' to see if they evaluate to True or False.
 
 ### Logic: Control Statements
 
-Control Statements are used to direct the flow of your code and create the opportunity for decision making. Control statements foundation is build on truth.
+Control Statements are used to direct the flow of your code and create the opportunity for decision making. Control statements' foundation is build on truth.
 
 #### If Statement
 
@@ -757,7 +757,7 @@ did not find ATG in your dna sequence
 
 1. Using a text editor, write a script that 
    - Assigns a value to a variable
-   - Has a if/else statment in which:
+   - Has a if/else statement in which:
      - It prints out a confirmation of truth if the value is true
      - It prints out "Not True" if the value is not true. 
 
@@ -879,7 +879,7 @@ Here are a list of functions that take numbers as arguments.
 -5
 ```
 
-Many numeric functions are not built into the Python core and need to be included in our script if we want to use them. To include them at the tip of the script type: 
+Many numeric functions are not built into the Python core and need to be included in our script if we want to use them. To include them at the top of the script type: 
 `import math`
 
 These next functions are found in the math module and need to be imported. To use these functions, prepend the function with the module name, i.e, `math.ceil(15.5)`  
@@ -997,7 +997,7 @@ You can ask what the length of any sequence is
 1. What is the length of this sequence?
 
    ```python
-   DNA = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' ;
+   DNA = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
    ```
 
    ​
@@ -1005,7 +1005,7 @@ You can ask what the length of any sequence is
 2. What is the length of this sequence?
 
    ```python
-   numbers = [ 3 , 61 , 7 , 27 , 83 , 6 , 0 , 175 , 9 , 28 , 4 ] ;
+   numbers = [ 3 , 61 , 7 , 27 , 83 , 6 , 0 , 175 , 9 , 28 , 4 ]
    ```
 
    ​
@@ -1013,7 +1013,7 @@ You can ask what the length of any sequence is
 3. How about this sequence?
 
    ```python
-   DNA = [ 'GTACCT' , 'TG' , 'ATTTCGTAT' , 'TCTGAGAG' , 'GCT', 'GCT', 'GCTTAGCGGTAGCC' , 'CCTTG','GTTTCCGTG','GCAA','CGGAAAA' ];
+   DNA = [ 'GTACCT' , 'TG' , 'ATTTCGTAT' , 'TCTGAGAG' , 'GCT', 'GCT', 'GCTTAGCGGTAGCC' , 'CCTTG','GTTTCCGTG','GCAA','CGGAAAA' ]
    ```
 
    ​
@@ -1288,8 +1288,8 @@ The value that `len()` returns can be stored in a variable.
 You can mix strings and ints in `print()`, but not in concatenation.
 
 ```python
->>> print("The lenth of the DNA sequence:" , dna , "is" , dna_length)
-The lenth of the DNA sequence: TAGCTATATAAAATCATAAT is 20
+>>> print("The length of the DNA sequence:" , dna , "is" , dna_length)
+The length of the DNA sequence: TAGCTATATAAAATCATAAT is 20
 ```
 
 
@@ -1536,7 +1536,7 @@ Strings can be formated using the  `format()` function. Pretty intuitive, but wa
 ```python
 >>> dna = 'TGAACATCTAAAAGATGAAGTTT'
 >>> dna_len = len(dna)
->>> gene_name = 'Brac1'
+>>> gene_name = 'Brc1'
 >>> string = "This sequence: {} is {} nucleotides long and is found in {}."
 >>> string.format(dna,dna_len,gene_name)
 'This sequence: TGAACATCTAAAAGATGAAGTTT is 23 nucleotides long and is found in Brca1.'
@@ -2084,7 +2084,7 @@ Output:
 
 1. Write a script that iterate through and prints each element of this list using a `for` loop: [101,2,15,22,95,33,2,27,72,15,52]
    - Now print out only the values that are even (use modulus operator).
-2. Write a new loop that uses `range()` to print out every number bewteen 1 and 100. 
+2. Write a new loop that uses `range()` to print out every number between 1 and 100. 
 3. Make a list with the following data `['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']`. 
    - Use a `for` loop to iterate through each element of this list
    - Print out each element
@@ -2097,7 +2097,7 @@ Loops control statements allow for altering the normal flow of execution.
 
 | CONTROL STATEMENT | DESCRIPTION                                                  |
 | ----------------- | ------------------------------------------------------------ |
-| `break`           | A loop is terminated when a break statement is executed. All the lines of code after the break, but within the loop block are not executed. No more iteration of the loop are preformed |
+| `break`           | A loop is terminated when a break statement is executed. All the lines of code after the break, but within the loop block are not executed. No more iterations of the loop are performed |
 | `continue`        | A single iteration of a loop is terminated when a continue statement is executed. The next iteration will proceed normally. |
 
 ##### Loop Control: Break
@@ -2132,7 +2132,7 @@ Output:
 
 ##### Loop Control: Continue
 
-When a `continue` is encounter the current iteration of the loop is done, nothing below the `continue` will be executed, but the next loop will proceed normally.
+When a `continue` is encountered, the current iteration of the loop is done, nothing below the `continue` will be executed, but the next loop will proceed normally.
 
 Code:
 
@@ -2300,7 +2300,7 @@ The value can be accessed and passed directly to a function or stored in a varia
   >>> print(genes['TP53'])
   GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC
   >>>
-  >>> seq = genes['TP53'];
+  >>> seq = genes['TP53']
   >>> print(seq)
   GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC
 ```
@@ -2734,7 +2734,6 @@ Note the new lines. Now, lets print the contents to the screen with Python. We w
 ```python
 >>> file_obj = open("seq.nt","r")
 >>> contents = file_obj.read()
-seq.nt.fa
 >>> print(contents)  # note newline characters are part of the file!
 ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAG
 ACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG
@@ -2870,7 +2869,7 @@ $ cat nt.counts.txt
 Total: 142
 ```
 
-> The file we are reading from is named, "seq.nt.fa"  
+> The file we are reading from is named, "seq.nt"  
 > The file we are writing to is named, "nt.counts.txt"  
 > We read each line, calculate the length of each line and print the length  
 > We also create a variable to keep track of the total nt count  
@@ -3501,7 +3500,7 @@ Let's save the new string that is returned in a variable
 ```python
   >>> s = "He had a wife."
   >>> new_s = re.sub(r'w.+f' , 'goat', s)
-  >>> print(new_str)
+  >>> print(new_s)
   He had a goate.
   >>> print(s)
   He had a wife.
@@ -3837,7 +3836,7 @@ show_n(n)
 Variables inside functions are local and therefore can only been accessed from within the function block. This applies to arguments as well as variables defined inside a function.
 
 ```python
-##!/usr/bin/end python3
+##!/usr/bin/env python3
 
 def set_local_x_to_five(x):
   print('Inside def')
