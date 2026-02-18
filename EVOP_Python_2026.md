@@ -3443,7 +3443,7 @@ Or you can use a for loop to do something to each match.
 ![try it](images/Try-It-Now.jpg)
 
 1. Create a script in your text editor.
-2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/sequence_data.txt) 
+2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/main/files/sequence_data.txt) 
 3. loop through each line of the file
 4. store the gene name in a variable
 5. store the sequence in a variable
@@ -3527,7 +3527,7 @@ Sometimes you want to find a pattern and use it in the replacement.
 
 1. Create a script in your text editor.
 
-2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/sequence_data.txt) 
+2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/main/files/sequence_data.txt) 
 
 3. loop through each line of the file
 
@@ -3740,7 +3740,7 @@ def gc_content(dna='A'):   # give our function a name and parameter 'dna'
 ![try it](images/Try-It-Now.jpg)
 
 1. Create a script that contains a gc_content function.
-2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/sequence_data.txt)
+2. Open [sequence_data.txt](https://raw.githubusercontent.com/prog4biol/evop2026/main/files/sequence_data.txt)
 3. loop through each line of the file
 4. store the gene name in a variable
 5. store the sequence in a variable
@@ -4131,7 +4131,7 @@ Dictionaries of dictionaries is my favorite!! You can do so many useful things w
 
 2. How would you print and retrieve the nucleotide composition of gene1?
 
-3. CHALLENGE QUESTION: Take a mulit-FASTA [trinity.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/trinity.nt.fa) file from user input and calculate the nucleotide composition for each sequence. Use a datastructure to keep count. Print out each sequence name and its compostion in this format `seqName\tA_count\tT_count\tG_count\C_count`
+3. CHALLENGE QUESTION: Take a mulit-FASTA [trinity.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2026/main/files/trinity.nt.fa) file from user input and calculate the nucleotide composition for each sequence. Use a datastructure to keep count. Print out each sequence name and its compostion in this format `seqName\tA_count\tT_count\tG_count\C_count`
 
    1. Parse the FASTA to get each complete sequence.
    2. Use `count()` to get the count of each A, T, G, C.
@@ -4417,7 +4417,7 @@ ATGCGATCGAGC translates to MRSS
 
 ### Read a FASTA file
 
-We were learning how to read a fasta file line by line. SeqIO.parse() is the main method for reading from almost any file format. We'll need a fasta file. We can use [seq.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/seq.nt.fa) which looks like this
+We were learning how to read a fasta file line by line. SeqIO.parse() is the main method for reading from almost any file format. We'll need a fasta file. We can use [seq.nt.fa](https://raw.githubusercontent.com/prog4biol/evop2026/main/files/seq.nt.fa) which looks like this
 
 ```
 >seq1
@@ -4694,7 +4694,7 @@ To parse the output, you'll write something like this
 ![try it](images/Try-It-Now.jpg)
 
 1. Run BLAST with output in XML format. 
-   1. Query = [query.fa](https://raw.githubusercontent.com/prog4biol/evop2026/master/files/query.fa)
+   1. Query = [query.fa](https://raw.githubusercontent.com/prog4biol/evop2026/main/files/query.fa)
    2. Program = blastx
    3. Database = Swissprot/UniProt
       1. Already downloaded, path:
