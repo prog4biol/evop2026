@@ -415,16 +415,16 @@ Importing modules in Python gives you access to all of the codes within it (more
 Let's imagine we have a script called friends.py. If you write this on the command line:
 
 ```bash
-% ./friends.py Joe Anita
+% ./friends.py Harry Hermione
 ```
 
 This happens inside the script:
 
-> the script name 'friends.py', and the strings 'Joe' and 'Anita'  appear in a list called `sys.argv`.  
+> the script name 'friends.py', and the strings 'Harry' and 'Hermione'  appear in a list called `sys.argv`.  
 
 > These are the command line parameters, or arguments you want to pass to your script.  
 > `sys.argv[0]` is the script name.  
-> You can access values of the other parameters by their indices, starting with 1, so `sys.argv[1]` contains 'Joe'  and `sys.argv[2]` contains 'Anita'. You access elements in a list by adding square brackets and the numerical index after the name of the list. 
+> You can access values of the other parameters by their indices, starting with 1, so `sys.argv[1]` contains 'Harry'  and `sys.argv[2]` contains 'Hermione'. You access elements in a list by adding square brackets and the numerical index after the name of the list. 
 > If you wanted to print a message saying these two people are friends, you might write some code like this
 
 Code:  
