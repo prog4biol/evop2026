@@ -108,7 +108,7 @@ Hello, EVOP2026!
 
 
 
-1. Open the interactive interpreter. Type `python3` in the terminal window (`ipython` is another interactive terminal).
+1. Open the interactive interpreter. Type `python3` in the terminal window
 2. Use the `print()` function to print something to the screen. Make sure to use parenthesis `()`, quotes `""` like in the example.
 
 #### Python Scripts
@@ -117,6 +117,8 @@ Hello, EVOP2026!
 - Python scripts are always saved in files whose names have the extension '.py' (i.e. the filename ends with '.py').
 
 File Contents:  
+Enter the following into a file named "test.py"
+print ("Hello, EVOP2026!")
 
 ```python3
 print ("Hello, EVOP2026!")
@@ -148,7 +150,7 @@ You can look at the permissions with
 
 ```bash
 % ls -l test.py 
--rwxr-xr-x  1 srobb  staff  60 Oct 16 14:29 test.py
+-rwxr-xr-x  1 dtriant  staff  60 Feb 20 14:29 test.py
 
 ```
 
