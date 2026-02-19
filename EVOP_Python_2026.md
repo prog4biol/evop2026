@@ -2722,6 +2722,13 @@ The symmetric difference is the elements that are only in the first set plus the
 | `set.union(sets)`                       | returns the union of set and the other provided sets         |
 | `set.update(set2)`                      | update set with the union of set and set2                    |
 
+**Sets vs Lists**
+Both sets and lists are used to store collections of elements but...
+Lists are ordered. Sets are unordered. 
+Lists can contain duplicates. Set elements are unique.
+Lists support slicing & indexing. Sets support mathematical operations.
+List elements can be added, removed or changed. Set elements can be added or removed but not changed.
+
 ### I/O and Files
 
 I/O stands for input/output. The in and out refer to getting data into and out of your script. It might be a little surprising at first, but writing to the screen, reading from the keyboard, reading from a file, and writing to a file are all examples of I/O.
