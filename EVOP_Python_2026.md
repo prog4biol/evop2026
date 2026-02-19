@@ -439,8 +439,8 @@ print(friend1,'and',friend2,'are friends')
 
 Output:  
 ```bash
-./commandline_input.py Shaggy Scoby
-Shaggy and Scoby are friends
+./commandline_input.py Harry Hermione
+Harry and Hermione are friends
 ```
 
 > notice that the `print()` function takes a list of comma separated values. These values can be variables or literal strings. More about the `print()` function later
@@ -476,7 +476,9 @@ We'll cover `dir()` in more detail later
 >>> data = 5
 >>> type(data)
 <class 'int'>
+dir(list)
 ```
+What does the dir in list look like?
 
 ![try it](images/Try-It-Now.jpg)
 
