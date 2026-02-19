@@ -5,7 +5,7 @@ University of Virginia
 dtriant@virginia.edu  
 
 Created by:  
-Sofia Robb  Ph.D.<br>Genomic Scientist @ Stowers Institute for Medical Research<br>[https://planosphere.stowers.org]
+Sofia Robb  Ph.D.<br>Genomic Scientist @ Stowers Institute for Medical Research<br>
 
 
 
@@ -2724,10 +2724,10 @@ The symmetric difference is the elements that are only in the first set plus the
 
 **Sets vs Lists:**  
 Both sets and lists are used to store collections of elements but...  
-Lists are ordered. Sets are unordered. 
-Lists can contain duplicates. Set elements are unique.
-Lists support slicing & indexing. Sets support mathematical operations.
-List elements can be added, removed or changed. Set elements can be added or removed but not changed.
+Lists are ordered. Sets are unordered.<br>
+Lists can contain duplicates. Set elements are unique.<br>
+Lists support slicing & indexing. Sets support mathematical operations.<br>
+List elements can be added, removed or changed. Set elements can be added or removed but not changed.<br>
 
 ### I/O and Files
 
