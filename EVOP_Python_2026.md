@@ -2314,6 +2314,8 @@ Dictionaries are a collection of key/value pairs. In Python, each key is separat
 
 Each key in a dictionary is unique, while values may not be. The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.
 
+If a key is repeated, the last value assigned to that key will overwrite any previous value. 
+
 Data that is appropriate for dictionaries are two pieces of information that naturally go together, like gene name and sequence. 
 
 | KEY   | VALUE                                                        |
