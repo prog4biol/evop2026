@@ -478,7 +478,7 @@ We'll cover `dir()` in more detail later
 <class 'int'>
 dir(list)
 ```
-What does the dir in list look like?
+What does the dir(list) output?
 
 ![try it](images/Try-It-Now.jpg)
 
