@@ -2722,8 +2722,8 @@ The symmetric difference is the elements that are only in the first set plus the
 | `set.union(sets)`                       | returns the union of set and the other provided sets         |
 | `set.update(set2)`                      | update set with the union of set and set2                    |
 
-**Sets vs Lists**
-Both sets and lists are used to store collections of elements but...
+**Sets vs Lists:**  
+Both sets and lists are used to store collections of elements but...  
 Lists are ordered. Sets are unordered. 
 Lists can contain duplicates. Set elements are unique.
 Lists support slicing & indexing. Sets support mathematical operations.
