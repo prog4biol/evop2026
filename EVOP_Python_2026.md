@@ -25,8 +25,8 @@ We only have 2 days. I am going to teach you the basics and more importantly tea
 
 ## Installing Python
 
-1. Install Python and package manager: it depends ... we use minimamba and mini-forge at University of Virginia<br>
-   We should have it installed on the system here at EVOP
+1. Install Python and package manager: it depends ... we use minimamba and miniforge at University of Virginia<br>
+   Here at EVOP will be using conda to install python
 
 
 ## Python References
@@ -71,7 +71,17 @@ Python has
 
 ### Running Python
 
-There are two versions of Python: Python 2 and Python 3. We will be using 3. This version fixes some of the problems with Python 2 and breaks some other things. A lot of code has already been written for Python 2 (it's older), but going forwards, more and more new code development will use Python 3.
+We will be using Python3. You can check the version installed on your machine:
+
+```
+python3 --version
+```
+You can see where Python is installed:
+
+```
+which python3
+```
+Why do we need to use "python3"?
 
 #### Interactive Interpreter
 
@@ -79,9 +89,6 @@ Python can be run one line at a time in an interactive interpreter. You can thin
 
 `% python3`    
 
-or
-
-`% ipython`
 
 Note:
 
@@ -90,7 +97,7 @@ Note:
 
 First Python Commands:
 
-```python
+```python3
 >>> print("Hello, EVOP2026!")
 Hello, EVOP2026!
 ```
@@ -111,7 +118,7 @@ Hello, EVOP2026!
 
 File Contents:  
 
-```python
+```python3
 print ("Hello, EVOP2026!")
 ```
 
@@ -151,7 +158,7 @@ We also need to add a line at the beginning of the script that tells the shell t
 
 The file test.py now looks like this
 
-```python
+```python3
 #!/usr/bin/env python3
 print ("Hello, EVOP2026!")
 ```
@@ -211,7 +218,7 @@ Python denotes blocks of code by line __indentation__. Incorrect line spacing an
 
 The number of spaces in the indentation need to be consistent but a specific number is not required. All lines of code, or statements, within a single block must be indented in the same way. For example:
 
-```python
+```python3
 #!/usr/bin/env python3
 for x in (1,2,3,4,5):
     if x > 4:
@@ -231,7 +238,7 @@ Comments start with a pound or hash symbol `#`. All characters after this symbol
 
 The first line of a script starting with `#!` is a special example of a comment that also has the special function in unix of telling the unix shell how to run the script.
 
-```python
+```python3
 #!/usr/bin/env python3
 
 # this is my first script
@@ -256,7 +263,7 @@ Numbers and strings are two common data types. Literal numbers and strings like 
 
 For Example:  
 
-```python
+```python3
 gene_count = 5
 gene_count = 10
 ```
@@ -267,7 +274,7 @@ Different types of data can be assigned to variables, i.e., integers (1,2,3), fl
 
 For Example:
 
-```python
+```python3
 count   = 10     # this is an integer
 average = 2.5    # this is a float
 message = "Welcome to Python" # this is a string
@@ -292,7 +299,7 @@ Collections of data can also be stored in special data types, i.e., tuples, list
 - Lists are mutable: the number of elements in the list and what's stored in each element can change
 - Lists are enclosed in **square brackets** and items are separated by commas
 
-```python
+```python3
 [ 'atg' , 'aaa' , 'agg' ]
 ```
 
@@ -306,7 +313,7 @@ Collections of data can also be stored in special data types, i.e., tuples, list
 
 The contents of a list can be assigned to a variable
 
-```python
+```python3
 codons = [ 'atg' , 'aaa' , 'agg' ]
 ```
 
@@ -327,7 +334,7 @@ codons = [ 'atg' , 'aaa' , 'agg' ]
 - **Tuples are immutable: you can't change the values or the number of values**
 - A tuple is enclosed in **parentheses** and items are separated by commas.
 
-```python
+```python3
 ( 'Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep' , 'Oct' , 'Nov' , 'Dec' )
 ```
 
@@ -348,7 +355,7 @@ codons = [ 'atg' , 'aaa' , 'agg' ]
 
 Tuples can also be assigned to a variable:
 
-```python
+```python3
 months = ( 'Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep' , 'Oct' , 'Nov' , 'Dec' )
 ```
 
@@ -363,7 +370,7 @@ months = ( 'Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep'
 - Commas separate key:value pairs.
 - Although they maintain order, they are still not indexable by position like lists
 
-```python
+```python3
 { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
 ```
 
@@ -376,7 +383,7 @@ months = ( 'Jan' , 'Feb' , 'Mar' , 'Apr' , 'May' , 'Jun' , 'Jul' , 'Aug' , 'Sep'
 
 Dictionaries can also be assigned to a variable:
 
-```python
+```python3
 genes = { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
 ```
 
@@ -396,7 +403,7 @@ Command line parameters follow the name of a script or program and have spaces b
 
 You need to import the sys module at the beginning of your script like this
 
-```python
+```python3
 #!/usr/bin/env python3
 import sys
 ```
@@ -419,7 +426,7 @@ This happens inside the script:
 > If you wanted to print a message saying these two people are friends, you might write some code like this
 
 Code:  
-```python
+```python3
 #!/usr/bin/env python3
 import sys
 friend1 = sys.argv[1] # get first command line parameter
@@ -460,7 +467,7 @@ You have an identifier in your code called `data`. Does it represent a string or
 
 We'll cover `dir()` in more detail later
 
-```python
+```python3
 >>> data = [2,4,6]
 >>> type(data)
 <class 'list'>
@@ -568,7 +575,7 @@ You can test to see if a value is included in a string, tuple, or list. You can 
 
 For Example:  
 
-```python
+```python3
 >>> dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
 >>> 'TCT' in dna
 True
@@ -657,7 +664,7 @@ Which means that these are True:
 
 `bool()` is a function that will test if a value is true.
 
-```python
+```python3
 >>> bool(True)
 True
 >>> bool('True')
@@ -705,7 +712,7 @@ Control Statements are used to direct the flow of your code and create the oppor
 
 **if**
 
-```python
+```python3
 if expression :
   statement
   statement
@@ -713,7 +720,7 @@ if expression :
 
 For Example:  
 
-```python
+```python3
 dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
 if 'AGC' in dna:
   print('found AGC in your dna sequence')
@@ -736,7 +743,7 @@ found AGC in your dna sequence
 - The first indented block is executed if the condition is true.
 - If the condition is false, the second indented else block is executed.
 
-```python
+```python3
 dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
 if 'ATG' in dna:
   print('found ATG in your dna sequence')
@@ -765,7 +772,7 @@ did not find ATG in your dna sequence
 - If it's false, the indented block following the elif is executed if the first elif condition is true. 
 - Any remaining elif conditions will be tested in order until one is found to be true. If none is true, the else indented block is executed.
 
-```python
+```python3
 count = 60
 if count < 0:
   message = "is less than 0"
@@ -830,7 +837,7 @@ Sometimes one type of number needs to be changed to another for a function to be
 | `complex(x)`    | to convert x to a complex number with real part x and imaginary part zero |
 | `complex(x, y)` | to convert x and y to a complex number with real part x and imaginary part y |
 
-```python
+```python3
 >>> int(2.3)
 2
 >>> float(2)
@@ -852,7 +859,7 @@ Here are a list of functions that take numbers as arguments.
 | `max(x1, x2,...)` | The largest positive argument is returned |
 | `min(x1, x2,...)` | The smallest argument is returned        |
 
-```python
+```python3
 >>> abs(2.3)
 2.3
 >>> abs(-2.9)
@@ -893,7 +900,7 @@ These next functions are found in the math module and need to be imported. To us
 | `math.pow(x, y)` | The value of x raised to the power y is returned |
 | `math.sqrt(x)`   | Return the square root of x for x >= 0   |
 
-```python
+```python3
 >>> import math
 >>>
 >>> math.ceil(2.3)
@@ -1008,7 +1015,7 @@ In Python a type of object gets operations that belong to that type. Sequences h
 
 You can ask what the length of any sequence is
 
-```python
+```python3
 >>>len('ACGTGA') # length of a string
 6
 >>>len( (0.23, 9.74, -8.17, 3.24, 0.16) )   # length of a tuple, needs two parentheses ( (TUPLE) )
@@ -1023,7 +1030,7 @@ You can ask what the length of any sequence is
 
 1. What is the length of this sequence?
 
-   ```python
+   ```python3
    DNA = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
    ```
 
@@ -1031,7 +1038,7 @@ You can ask what the length of any sequence is
 
 2. What is the length of this sequence?
 
-   ```python
+   ```python3
    numbers = [ 3 , 61 , 7 , 27 , 83 , 6 , 0 , 175 , 9 , 28 , 4 ]
    ```
 
@@ -1039,7 +1046,7 @@ You can ask what the length of any sequence is
 
 3. How about this sequence?
 
-   ```python
+   ```python3
    DNA = [ 'GTACCT' , 'TG' , 'ATTTCGTAT' , 'TCTGAGAG' , 'GCT', 'GCT', 'GCTTAGCGGTAGCC' , 'CCTTG','GTTTCCGTG','GCAA','CGGAAAA' ]
    ```
 
@@ -1073,7 +1080,7 @@ Notes about quotes:
 
 Use of quotation examples:  
 
-```python
+```python3
 word = 'word'
 sentence = "This is a sentence."
 paragraph = """This is a paragraph. It is
@@ -1088,14 +1095,14 @@ We saw examples of `print()` earlier. Lets talk about it a bit more.  `print()` 
 
 Let's use the `print()` function to print a string.  
 
-```python
+```python3
 >>>print("ATG")  
 ATG
 ```
 
 Let's assign a string to a variable and print the variable.
 
-```python
+```python3
 >>>dna = 'ATG'
 >>> print(dna)
 ATG
@@ -1103,7 +1110,7 @@ ATG
 
 What happens if we put the variable in quotes?  
 
-```python
+```python3
 >>>dna = 'ATG'
 ATG
 >>> print("dna")
@@ -1114,7 +1121,7 @@ dna
 
 Let's see what happens when we give `print()` two literal strings as arguments.  
 
-```python
+```python3
 >>> print("ATG","GGTCTAC")
 ATG GGTCTAC
 ```
@@ -1123,7 +1130,7 @@ ATG GGTCTAC
 
 What if you do not want your strings separated by a space? Use the concatenation operator to concatenate the two strings before or within the `print()` function. 
 
-```python
+```python3
 >>> print("ATG"+"GGTCTAC")
 ATGGGTCTAC
 >>> combined_string = "ATG"+"GGTCTAC"
@@ -1135,7 +1142,7 @@ ATGGGTCTAC
 > We get the two strings printed to the screen without being separated by a space.  
 > You can also use this
 
-```python
+```python3
 >>> print('ATG','GGTCTAC',sep='')
 ATGGGTCTAC
 ```
@@ -1153,7 +1160,7 @@ ATGGGTCTAC
 
 Now, lets print a variable and a literal string.
 
-```python
+```python3
 >>>dna = 'ATG'
 ATG
 >>> print(dna,'GGTCTAC')
@@ -1164,7 +1171,7 @@ ATG GGTCTAC
 
 How would we print the two without a space?
 
-```python
+```python3
 >>>dna = 'ATG'
 ATG
 >>> print(dna + 'GGTCTAC')
@@ -1173,7 +1180,7 @@ ATGGGTCTAC
 
 Something to think about: Values of variables are variable. Or in other words, they are mutable, changeable.  
 
-```python
+```python3
 >>>dna = 'ATG'
 ATG
 >>> print(dna)
@@ -1198,7 +1205,7 @@ How would you include a new line, carriage return, or tab in your string?
 
 Let's include some escape characters in our strings and `print()` functions.
 
-```python
+```python3
 >>> string_with_newline = 'this string has a new line\nthis is the second line'
 >>> print(string_with_newline)
 this string has a new line
@@ -1212,7 +1219,7 @@ this is the second line
 
 Another way to do this is to express a multi-line string enclosed in triple quotes (""").
 
-```python
+```python3
 >>> print("""this string has a new line
 ... this is the second line""")
 this string has a new line
@@ -1221,7 +1228,7 @@ this is the second line
 
 Let's print a tab character (\t).
 
-```python
+```python3
 >>> line = "value1\tvalue2\tvalue3"
 >>> print(line)
 value1	value2	value3
@@ -1231,7 +1238,7 @@ value1	value2	value3
 
 You can add a backslash before any character to force it to be printed as a literal. This is called 'escaping'. This is only really useful for printing literal quotes ' and " 
 
-```python
+```python3
 >>> print('this is a \'word\'')  # if you want to print a ' inside '...'
 this is a 'word'
 >>> print("this is a 'word'") # maybe clearer to print a ' inside "..."
@@ -1242,7 +1249,7 @@ this is a 'word'
 
 If you want every character in your string to remain exactly as it is, declare your string a raw string literal with 'r' before the first quote. This looks ugly, but it works.
 
-```python
+```python3
 >>> line = r"value1\tvalue2\tvalue3"
 >>> print(line)
 value1\tvalue2\tvalue3
@@ -1259,7 +1266,7 @@ value1\tvalue2\tvalue3
 
 To concatenate strings use the concatenation operator '+'  
 
-```python
+```python3
 >>> promoter= 'TATAAA'
 >>> upstream = 'TAGCTA'
 >>> downstream = 'ATCATAAT'
@@ -1274,7 +1281,7 @@ TAGCTATATAAAATCATAAT
 
 What happens if you use `+` with numbers (these are integers or ints)?
 
-```python
+```python3
 >>> 4+3
 7
 
@@ -1284,7 +1291,7 @@ For strings, `+` concatenates; for integers, `+` adds.
 
 You need to convert the numbers to strings before you can concatenate them
 
-```python
+```python3
 >>> str(4) + str(3)
 '43'
 ```
@@ -1295,7 +1302,7 @@ You need to convert the numbers to strings before you can concatenate them
 
 Use the `len()` function to calculate the length of a string. This function takes a sequence as an argument and returns an int
 
-```python
+```python3
 >>> print(dna)
 TAGCTATATAAAATCATAAT
 >>> len(dna)
@@ -1306,7 +1313,7 @@ TAGCTATATAAAATCATAAT
 
 The value that `len()` returns can be stored in a variable.  
 
-```python
+```python3
 >>> dna_length = len(dna)
 >>> print(dna_length)
 20
@@ -1314,7 +1321,7 @@ The value that `len()` returns can be stored in a variable.
 
 You can mix strings and ints in `print()`, but not in concatenation.
 
-```python
+```python3
 >>> print("The length of the DNA sequence:" , dna , "is" , dna_length)
 The length of the DNA sequence: TAGCTATATAAAATCATAAT is 20
 ```
@@ -1333,7 +1340,7 @@ Changing the case of a string is a bit different than you might first expect. Fo
 
 Let's create a new string object.    
 
-```python
+```python3
 dna = "ATGCTTG"
 ```
 
@@ -1341,7 +1348,7 @@ dna = "ATGCTTG"
 
 Now that we have a string object we can use string methods. The way you use a method is to put a '.' between the object and the method name.
 
-```python
+```python3
 >>> dna = "ATGCTTG"
 >>> dna.lower()
 'atgcttg'
@@ -1351,7 +1358,7 @@ Now that we have a string object we can use string methods. The way you use a me
 
 The contents of the 'dna' variable have not been changed. Strings are immutable. If you want to keep the lowercased version of the string, store it in a new variable.
 
-```python
+```python3
 >>> print(dna)
 ATGCTTG
 >>> dna_lowercase = dna.lower()
@@ -1363,7 +1370,7 @@ atgcttg
 
 The string method can be nested inside of other functions.
 
-```python
+```python3
 >>> dna = "ATGCTTG"
 >>> print(dna.lower())
 atgcttg
@@ -1373,7 +1380,7 @@ atgcttg
 
 If you try to use a string method on a object that is not a string you will get an error.
 
-```python
+```python3
 >>> nt_count = 6
 >>> dna_lc = nt_count.lower()
 Traceback (most recent call last):
@@ -1385,7 +1392,7 @@ AttributeError: 'int' object has no attribute 'lower'
 
 Now let's uppercase a string.
 
-```python
+```python3
 >>> dna = 'attgct'
 >>> dna.upper()
 'ATTGCT'
@@ -1408,7 +1415,7 @@ How do you know what methods are available? Use the `dir()` function.
 
 `count(str)` returns the number of exact matches of `str` it found (as an int)
 
-```python
+```python3
 >>> dna = 'ATGCTGCATT'
 >>> dna.count('T')
 4
@@ -1425,7 +1432,7 @@ How do you know what methods are available? Use the `dir()` function.
 
 `replace(str1,str2)` returns a new string with all matches of `str1` in a string replaced with `str2`. 
 
-```python
+```python3
 >>> dna = 'ATGCTGCATT'
 >>> dna.replace('T','U')
 'AUGCUGCAUU'
@@ -1465,7 +1472,7 @@ This string 'ATTAAAGGGCCC' is made up of the following sequence of characters, a
 
 Let's return the 4th, 5th, and 6th nucleotides. To do this, we need to count like a computer and start our string at 0 and return the 3rd, 4th, and 5th characters. This will be everything from 3 to 6. Python counts the gaps before each character in the string, starting at 0.
 
-```python
+```python3
 >>> dna = 'ATTAAAGGGCCC'
 >>> sub_dna = dna[3:6]
 >>> print(sub_dna)
@@ -1476,7 +1483,7 @@ AAA
 
 Let's return the first 6 characters.
 
-```python
+```python3
 >>> dna = 'ATTAAAGGGCCC'
 >>> sub_dna = dna[0:6]
 >>> print(sub_dna)
@@ -1487,7 +1494,7 @@ ATTAAA
 
 Let's return every character from index 6 to the end of the string.
 
-```python
+```python3
 >>> dna = 'ATTAAAGGGCCC'
 >>> sub_dna = dna[6:]
 >>> print(sub_dna)
@@ -1498,7 +1505,7 @@ GGGCCC
 
 Let's return the last 3 characters.
 
-```python
+```python3
 >>> sub_dna = dna[-3:]
 >>> print(sub_dna)
 CCC
@@ -1515,7 +1522,7 @@ CCC
 
 The positional index of an exact string in a larger string can be found and returned with the string method `find()`. An exact string is given as an argument and the index of its first occurrence is returned. -1 is returned if it is not found.
 
-```python
+```python3
 >>> dna = 'ATTAAAGGGCCC'
 >>> dna.find('T')
 1
@@ -1560,7 +1567,7 @@ Since these are methods, be sure to use in this format string.method().
 
 Strings can be formated using the  `f-strings()` function. Python introduced f-strings ("formatted string literals") in version 3.6 to make string formatting and interpolation simpler. For example, if you want to include literal strings and variables in your print statement and do not want to concatenate or use multiple arguments in the `print()` function you can use string formatting.  
 
-```python
+```python3
 >>> dna = 'TGAACATCTAAAAGATGAAGTTT'
 >>> dna_len = len(dna)
 >>> gene_name = 'Brc1'
@@ -1607,7 +1614,7 @@ f-strings allow you to embed expressions inside string literals
 
 1. Try out the `f-strings()` method.  Use the following string and the variables from the above example. Type it, don't copy it.
 
-   ```python
+   ```python3
    >>> string = "This sequence: {} is {} nucleotides long and is found in {}."
    >>> print(string.format(dna,dna_len,gene_name))
    ```
@@ -1650,7 +1657,7 @@ To retrieve a single value in a list use the value's index in this format list[i
 
 Here is a list:  
 
-```python
+```python3
 >>> codons = [ 'atg' , 'aaa' , 'agg' ]
 ```
 
@@ -1664,7 +1671,7 @@ Here is a list:
 
 Let's access the 0th value, this is the element in the list with index 0. You'll need an index number (`0`) inside square brackets like this `[0]` . This goes after the name of the list (`codons`)
 
-```python
+```python3
 >>> codons = [ 'atg' , 'aaa' , 'agg' ]
 >>> codons[0]
 'atg'
@@ -1672,7 +1679,7 @@ Let's access the 0th value, this is the element in the list with index 0. You'll
 
 The value can be saved for later use by storing in a variable.
 
-```python
+```python3
 >>> codons = [ 'atg' , 'aaa' , 'agg' ]
 >>> first_codon = codons[0]
 >>> print(first_codon)
@@ -1683,7 +1690,7 @@ atg
 
 The values can be retrieved and used directly.
 
-```python
+```python3
 >>> codons = [ 'atg' , 'aaa' , 'agg' ]
 >>> print(codons[0])
 atg
@@ -1697,7 +1704,7 @@ agg
 
 If you want to access the values starting at the end of the list, use negative indices.
 
-```python
+```python3
 >>> codons = [ 'atg' , 'aaa' , 'agg' ]
 >>> print(codons[-1])
 agg
@@ -1713,7 +1720,7 @@ aaa
 
 Individual values can be changed using the value's index and the assignment operator.
 
-```python
+```python3
 >>> print(codons)
 ['atg', 'aaa', 'agg']
 >>> codons[2] = 'cgc'
@@ -1723,7 +1730,7 @@ Individual values can be changed using the value's index and the assignment oper
 
 What about trying to assign a value to an index that does not exist?
 
-```python
+```python3
 >>> codons[5] = 'aac'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -1752,7 +1759,7 @@ This works in exactly the same way with lists as it does with strings. This is b
 | 4     | cgc   |
 | 5     | acg   |
 
-```python
+```python3
 >>> codons = [ 'atg' , 'aaa' , 'agg' , 'aac' , 'cgc' , 'acg']
 >>> print (codons[1:3])
 ['aaa', 'agg']
@@ -1810,7 +1817,7 @@ For these examples use: `nums = [1,2,3]` and `codons = [ 'atg' , 'aaa' , 'agg' ]
 
 Be careful how you make a copy of your list
 
-```python
+```python3
 >>> my_list=['a', 'one', 'two']
 >>> copy_list=my_list
 >>> copy_list.append('1')
@@ -1824,7 +1831,7 @@ Be careful how you make a copy of your list
 
 Let's copy the list using the `copy()` method.
 
-```python
+```python3
 >>> my_list=['a', 'one', 'two']
 >>> copy_list=my_list.copy()
 >>> copy_list.append('1')
@@ -1852,7 +1859,7 @@ Let's copy the list using the `copy()` method.
 
 Now that you have seen the `append()` function we can go over how to build a list one value at a time.
 
-```python
+```python3
 >>> words = []
 >>> print(words)
 []
@@ -1902,7 +1909,7 @@ The while loop will continue to execute a block of code as long as the test expr
 
 ##### While Loop Syntax
 
-```python
+```python3
   while expression:
     statement1
     statement2
@@ -1914,7 +1921,7 @@ The while loop will continue to execute a block of code as long as the test expr
 
 Code: 
 
-```python
+```python3
   #!/usr/bin/env python3
   
   count = 0
@@ -1952,7 +1959,7 @@ Output:
 
 An infinite loop occurs when a while condition is always true. Here is an example of an infinite loop.
 
-```python
+```python3
   #!/usr/bin/env python3
   
   count = 0
@@ -1999,7 +2006,7 @@ An example of a sequence is a list. Let's use a for loop with a list of words.
 
 Code:
 
-```python
+```python3
   #!/usr/bin/env python3
   
   words = ['zero','one','two','three','four']
@@ -2024,7 +2031,7 @@ This next example is using a `for` loop to iterate over a string. Remember a str
 
 Code:
 
-```python
+```python3
   #!/usr/bin/env python3
   
   dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
@@ -2150,7 +2157,7 @@ When a `break` is encountered no more code within the loop with be executed. The
 
 Code:
 
-```python
+```python3
   #!/usr/bin/env python3
   
   count = 0
@@ -2180,7 +2187,7 @@ When a `continue` is encountered, the current iteration of the loop is done, not
 
 Code:
 
-```python
+```python3
   #!/usr/bin/env python3
   
   count = 0
@@ -2215,7 +2222,7 @@ Output:
 
 An iterable is any data type that is can be iterated over, or can be used in iteration. An iterable can be made into an iterator with the `iter()` function. This means you can use the `next()` function.
 
-```python
+```python3
   >>> codons = [ 'atg' , 'aaa' , 'agg' ]
   >>> codons_iterator=iter(codons)
   >>> next(codons_iterator)
@@ -2234,7 +2241,7 @@ An iterable is any data type that is can be iterated over, or can be used in ite
 
 Example of using an iterator in a for loop:
 
-```python
+```python3
   >>> codons = [ 'atg' , 'aaa' , 'agg' ]
   >>> codons_it = iter(codons)
   >>> for codon in codons_it :
@@ -2253,7 +2260,7 @@ List comprehension is a way to make a list without typing out each element. Ther
 
 Here is an simple example:
 
-```python
+```python3
   >>> dna_list = ['TAGC', 'ACGTATGC', 'ATG', 'ACGGCTAG']
   >>> lengths = [len(dna) for dna in dna_list]
   >>> lengths
@@ -2262,7 +2269,7 @@ Here is an simple example:
 
 This is how you could do the same with a for loop:
 
-```python
+```python3
   >>> lengths = []
   >>> dna_list = ['TAGC', 'ACGTATGC', 'ATG', 'ACGGCTAG']
   >>> for dna in dna_list:
@@ -2276,7 +2283,7 @@ Using conditions:
 
 This will only return the length of an element that starts with 'A':
 
-```python
+```python3
   >>> dna_list = ['TAGC', 'ACGTATGC', 'ATG', 'ACGGCTAG']
   >>> lengths = [len(dna) for dna in dna_list if dna.startswith('A')]
   >>> lengths
@@ -2287,7 +2294,7 @@ This will only return the length of an element that starts with 'A':
 
 Here is an example of using mathematical operators to generate a list:
 
-```python
+```python3
   >>> two_power_list = [2 ** x for x in range(10)]
   >>> two_power_list
   [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
@@ -2312,13 +2319,13 @@ Data that is appropriate for dictionaries are two pieces of information that nat
 
 #### Creating a Dictionary
 
-```python
+```python3
   genes = { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
 ```
 
 Breaking up the key/value pairs over multiple lines make them easier to read.
 
-```python
+```python3
   genes = { 
              'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 
              'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' 
@@ -2329,7 +2336,7 @@ Breaking up the key/value pairs over multiple lines make them easier to read.
 
 To retrieve a single value in a dictionary use the value's key in this format `dict[key]`. This will return the value at the specified key. 
 
-```python
+```python3
   >>> genes = { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
   >>>
   >>> genes['TP53']
@@ -2340,7 +2347,7 @@ To retrieve a single value in a dictionary use the value's key in this format `d
 
 The value can be accessed and passed directly to a function or stored in a variable.
 
-```python
+```python3
   >>> print(genes['TP53'])
   GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC
   >>>
@@ -2355,7 +2362,7 @@ The value can be accessed and passed directly to a function or stored in a varia
 
 2. Print out your favorite book.
 
-   ```python
+   ```python3
    print(fav_dict['book'])
    ```
 
@@ -2363,7 +2370,7 @@ The value can be accessed and passed directly to a function or stored in a varia
 
 3. Print out your favorite book but use a variable in the key. 
 
-   ```python
+   ```python3
    fav_thing = 'book'
    print(fav_dict[fav_thing])
    ```
@@ -2380,7 +2387,7 @@ The value can be accessed and passed directly to a function or stored in a varia
 
 Individual values can be changed by using the key and the assignment operator.
 
-```python
+```python3
   >>> genes = { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
   >>>
   >>> print(genes)
@@ -2396,7 +2403,7 @@ Individual values can be changed by using the key and the assignment operator.
 
 Other assignment operators can also be used to change a value of a dictionary key. 
 
-```python
+```python3
   >>> genes = { 'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' }
   >>>
   >>> genes['TP53'] += 'TAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTG'
@@ -2417,7 +2424,7 @@ Since a dictionary is a sequence we can iterate through its contents.
 
 A for loop can be used to retrieve each key of a dictionary one a time:
 
-```python
+```python3
   >>> for gene in genes:
   ...   print(gene)
   ...
@@ -2427,7 +2434,7 @@ A for loop can be used to retrieve each key of a dictionary one a time:
 
 Once you have the key you can retrieve the value:
 
-```python
+```python3
   >>> for gene in genes:
   ...   seq = genes[gene]
   ...   print(gene, seq[0:10])
@@ -2452,7 +2459,7 @@ Once you have the key you can retrieve the value:
 
 Building a dictionary one key/value at a time is akin to what we just saw when we change a key's value.Normally you won't do this. We'll talk about ways to build a dictionary from a file in a later lecture.
 
-```python
+```python3
   >>> genes = {}
   >>> print(genes)
   {}
@@ -2468,7 +2475,7 @@ Building a dictionary one key/value at a time is akin to what we just saw when w
 
 Python generates an error (KeyError) if you try to access a key that does not exist.  
 
-```python
+```python3
   >>> print(genes['HDAC'])
   Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
@@ -2486,7 +2493,7 @@ Because Python generates a NameError if you try to use a key that doesn't exist 
 
 The best way to check whether a key exists is to use `in`
 
-```python
+```python3
   >>> gene = 'TP53'
   >>> if gene in genes: 
   ...     print('found')
@@ -2582,7 +2589,7 @@ Curly braces `{}` or the `set()` function can be used to create sets.
 
 > Note: to create an empty set you have to use `set()`, not `{}` the latter creates an empty dictionary.
 
-```python
+```python3
   >>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
   >>> print(basket)                     
   {'orange', 'banana', 'pear', 'apple'}
@@ -2592,7 +2599,7 @@ Curly braces `{}` or the `set()` function can be used to create sets.
 
 Test to see if an value is in the set
 
-```python
+```python3
   >>> 'orange' in basket                 
   True
   >>> 'crabgrass' in basket
@@ -2603,7 +2610,7 @@ Test to see if an value is in the set
 
 Union, intersection, difference and symmetric difference can be done with sets
 
-```python
+```python3
   >>> a = set('abracadabra')
   >>> b = set('alacazam')
   >>> a                                 
@@ -2620,7 +2627,7 @@ The difference between two sets are the elements that are unique to the set to t
 
 ![img](images/set_difference.png)
 
-```python
+```python3
   >>> a = set('abracadabra')
   >>> b = set('alacazam')
   >>> a - b                             
@@ -2635,7 +2642,7 @@ The union between two sets is a sequence of the all the elements of the first an
 
 ![img](images/set_union.png)
 
-```python
+```python3
   >>> a = set('abracadabra')
   >>> b = set('alacazam')
   >>> a | b                          
@@ -2650,7 +2657,7 @@ The intersection between two sets is a sequence of the elements which are in bot
 
 ![img](images/set_intersection.png)
 
-```python
+```python3
   >>> a = set('abracadabra')
   >>> b = set('alacazam')
   >>> a & b                            
@@ -2665,7 +2672,7 @@ The symmetric difference is the elements that are only in the first set plus the
 
 ![img](images/set_symmetric_difference.png)
 
-```python
+```python3
   >>> a = set('abracadabra')
   >>> b = set('alacazam')
   >>> a ^ b                             
@@ -2717,7 +2724,7 @@ I/O stands for input/output. The in and out refer to getting data into and out o
 
 You should be well versed in writing to the screen. We have been using the `print()` function to do this.  
 
-```python
+```python3
 >>> print ("Hello, EVOP2026!")
 Hello, EVOP2026!
 ```
@@ -2728,7 +2735,7 @@ Hello, EVOP2026!
 
 This is something new. There is a function which prints a message to the screen and waits for input from the keyboard. This input can be stored in a variable. It always starts as a string. Convert to an int or float if you want a number.
 
-```python 
+```python3 
 >>> user_input = input("Type Something Now: ")
 Type Something Now: Hi
 >>> print(user_input)
@@ -2754,7 +2761,7 @@ The most common access modes are read (r) and write (w).
 
 #### Open a File
 
-```python
+```python3
 >>> file_obj = open("seq.nt","r")
 ```
 
@@ -2775,7 +2782,7 @@ $
 
 Note the new lines. Now, lets print the contents to the screen with Python. We will use `read()` to read the entire contents of the file into a variable. 
 
-```python
+```python3
 >>> file_obj = open("seq.nt","r")
 >>> contents = file_obj.read()
 >>> print(contents)  # note newline characters are part of the file!
@@ -2790,7 +2797,7 @@ ACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG
 
 Here's another way to read data in from a file. A `for` loop can be used to iterate through the file one line at a time.
 
-```python
+```python3
 ##!/usr/bin/env python3
 
 file_obj = open("seq.nt","r")
@@ -2812,7 +2819,7 @@ ACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG
 
 Let's use `rstrip()` method to remove the newline from our file input.
 
-```python
+```python3
 #!/usr/bin/env python3
 
 file_obj = open("seq.nt","r")
@@ -2837,7 +2844,7 @@ ACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG
 
 Many people add this because it closes the file for you automatically. Good programming practice. Your code will clean up as it runs. For more advanced coding, `with ... as ...` saves limited resources like filehandles and database connections. For now, we just need to know that the `with ... as ...:` does the same as `fh = open(...) ... fh.close()`. So here's what the adapted code looks like
 
-```python
+```python3
 #!/usr/bin/env python3
 
 with open("seq.nt","r") as file_obj: #cleans up after exiting with block
@@ -2855,7 +2862,7 @@ The `write()` method is like the `print()` function. The biggest difference is t
 
 Let's write a few lines to a file named "writing.txt".  
 
-```python
+```python3
 #!/usr/bin/env python3
 
 fo = open("writing.txt" , "w")
@@ -2882,7 +2889,7 @@ One line.
 
 Now, let's get crazy! Lets read from one file a line at a time. Do something to each line and write the results to a new file.
 
-```python
+```python3
 #!/usr/bin/env python3
 
 seq_read  = open("seq.nt","r")
@@ -2933,7 +2940,7 @@ BRCA1   GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA
 
 How can we read this whole file in to a dictionary? 
 
-```python
+```python3
 #!/usr/bin/env python3                                                                                    
 
 seq_read  = open("sequence_data.txt","r")
@@ -2964,7 +2971,7 @@ Functions that utilize regular expressions allow for non-exact pattern matching.
 
 These specialized functions are not included in the core of Python. We need to import them by typing`import re`at the top of your script
 
-```python
+```python3
   #!/usr/bin/env python3
   
   import re
@@ -2974,7 +2981,7 @@ First we will go over a few examples then go into the mechanics in more detail.
 
 Let's start simple and find an exact match for the EcoRI restriction site in a string.
 
-```python
+```python3
   >>> dna = 'ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG'
   >>> if re.search(r"GAATTC",dna):
   ...   print("Found an EcoRI site!")
@@ -2989,7 +2996,7 @@ Let's start simple and find an exact match for the EcoRI restriction site in a s
 
 Let's find out what is returned by the `search()` function. 
 
-```python
+```python3
   >>> dna = 'ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG'
   >>> found=re.search(r"GAATTC",dna)
   >>> print(found)
@@ -3019,7 +3026,7 @@ This could match any of these:
 
 We could test for each of these, or use regular expressions. This is exactly what regular expressions can do for us.  
 
-```python
+```python3
   >>> dna = 'ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG'
   >>> found=re.search(r"[GA]C.?G",dna)
   >>> print(found)
@@ -3032,7 +3039,7 @@ We could test for each of these, or use regular expressions. This is exactly wha
 
 What about other potential matches in our DNA string? We can use `findall()` function to find all matches.
 
-```python
+```python3
   >>> dna = 'ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG'
   >>> found=re.findall(r"[GA]C.?G",dna)
   >>> print(found)
@@ -3043,7 +3050,7 @@ What about other potential matches in our DNA string? We can use `findall()` fun
 
 A quick count of all the matching sites can be done by counting the length of the returned list.
 
-```python
+```python3
   >>> len (re.findall(r"[GA]C.?G",dna))
   7
 ```
@@ -3201,7 +3208,7 @@ Examples:
 
 Variables can be used to store patterns.  
 
-```python
+```python3
   >>> pattern = r"[GA]C.?G"
   >>> len (re.findall(pattern,dna))
   7
@@ -3322,7 +3329,7 @@ The subpatterns are retrieved by a number. This will be the same number that cou
 
 Example:
 
-```python
+```python3
   >>> dna = 'ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG'
   >>> found=re.search( r"(.{50})TATTAT(.{25})"  , dna )
   >>> upstream = found.group(1)
@@ -3339,7 +3346,7 @@ Example:
 
 If you want to find the upstream and downstream sequence of ALL 'TATTAT' sites, use the `findall()` function.
 
-```python
+```python3
   >>> dna="ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG"
   >>> found = re.findall( r"(.{50})TATTAT(.{25})"  , dna )
   >>> print(found)
@@ -3350,7 +3357,7 @@ If you want to find the upstream and downstream sequence of ALL 'TATTAT' sites, 
 
 Another option for retrieving the upstream and downstream subpatterns is to put the `findall()` in a for loop
 
-```python
+```python3
   >>> dna="ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG"
   >>> for (upstream, downstream) in re.findall( r"(.{50})TATTAT(.{25})"  , dna ):
   ...   print("upstream:" , upstream)
@@ -3375,7 +3382,7 @@ Another option for retrieving the upstream and downstream subpatterns is to put 
 
 Another way to get this done is with an iterator, use the `finditer()` function in a for loop. This allows you to not store all the matches in memory. `finditer()` also allows you to retrieve the postion of the match.
 
-```python
+```python3
   >>> dna="ACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAAGGAATTCACCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGGATATTATCCGGTTTCCAAAGACAGTCTTCTAATTCCTCATTAGTAATAAGTAAAATGTTTATTGTTGTAGCTCTGG"
   >>> for match in re.finditer(r"(.{50})TATTAT(.{25})"  , dna):
   ...   print("upstream:" , match.group(1))
@@ -3400,7 +3407,7 @@ Another way to get this done is with an iterator, use the `finditer()` function 
 
 The match object contains information about the match that can be retrieved with match methods like `start()` and `end()`
 
-```python
+```python3
   #!/usr/bin/env python3
   
   import re
@@ -3433,7 +3440,7 @@ The match object contains information about the match that can be retrieved with
 
 By default, regular expressions are "greedy".  They try to match as much as they can. Use the quantifier '?' to make the match not greedy. The not greedy match is called 'lazy' 
 
-```python
+```python3
   >>> s = 'The fox ate my box of doughnuts'
   >>> found = re.search(r"(f.+x)",s)
   >>> print(found.group(1))
@@ -3444,7 +3451,7 @@ By default, regular expressions are "greedy".  They try to match as much as they
 
 Let's make this match lazy by using '?'
 
-```python
+```python3
   >>> found = re.search(r"(f.+?x)",s)
   >>> print(found.group(1))
   fox
@@ -3456,7 +3463,7 @@ Let's make this match lazy by using '?'
 
 Extracting codons from a string of DNA can be accomplished by using a subpattern in a `findall()` function. Remember the `findall()` function will return a list of the matches.  
 
-```python
+```python3
   >>> dna = 'GTTGCCTGAAATGGCGGAACCTTGAA'
   >>> codons = re.findall(r"(.{3})",dna)
   >>> print(codons)
@@ -3465,7 +3472,7 @@ Extracting codons from a string of DNA can be accomplished by using a subpattern
 
 Or you can use a for loop to do something to each match.
 
-```python
+```python3
   >>> for codon in re.findall(r"(.{3})",dna):
   ...   print(codon)
   ...
@@ -3497,7 +3504,7 @@ Or you can use a for loop to do something to each match.
 
 The `search()`, `match()`, `findall()`, and `finditer()` can be used in conditional tests. If a match is not found an empty list or 'None' is returned. These are both False.
 
-```python
+```python3
   >>> found=re.search( r"(.{50})TATTATZ(.{25})"  , dna )
   >>> if found:
   ...    print("found it")
@@ -3513,7 +3520,7 @@ The `search()`, `match()`, `findall()`, and `finditer()` can be used in conditio
 
 Nest it!
 
-```python
+```python3
   >>> 
   >>> if re.search( r"(.{50})TATTATZ(.{25})"  , dna ):
   ...    print("found it")
@@ -3529,7 +3536,7 @@ Nest it!
 
 Earlier we went over how to find an **exact pattern** and replace it using the `replace()` method. To find a pattern, or inexact match, and make a replacement the regular expression `sub()` function is used. This function takes the pattern, the replacement, the string to be searched, the number of times to do the replacement, and flags.
 
-```python
+```python3
   >>> s = "Who's afraid of the big bad wolf?"
   >>> re.sub(r'w.+f' , 'goat', s)
   "Who's afraid of the big bad goat?"
@@ -3541,7 +3548,7 @@ Earlier we went over how to find an **exact pattern** and replace it using the `
 
 Let's save the new string that is returned in a variable
 
-```python
+```python3
   >>> s = "He had a wife."
   >>> new_s = re.sub(r'w.+f' , 'goat', s)
   >>> print(new_s)
@@ -3556,7 +3563,7 @@ Let's save the new string that is returned in a variable
 
 Sometimes you want to find a pattern and use it in the replacement. 
 
-```python
+```python3
   >>> s = "Who's afraid of the big bad wolf?"
   >>> new_str = re.sub(r"(\w+) (\w+) wolf" , r"\2 \1 wolf" , s)
   >>> print(new_str)
@@ -3592,7 +3599,7 @@ Sometimes you want to find a pattern and use it in the replacement.
 | `re.U`                 | Interprets letters according to the Unicode character set. This flag affects the behavior of \w, \W, \b, \B. |
 | `re.X` `VERBOSE`       | This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class or when preceded by an unescaped backslash. When a line contains a # that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such # through the end of the line are ignored. |
 
-```python
+```python3
   >>> dna = "atgcgtaatggc"
   >>> re.search(r"ATG",dna)
   >>>
@@ -3647,7 +3654,7 @@ Let's see some examples.
 
 Python has built-in functions
 
-```python
+```python3
 >>> print('Hello world!')
 Hello world!
 >>> len('AGGCT')
@@ -3660,7 +3667,7 @@ First we can look at the code that makes the calculation, then we can convert th
 
 Code to find GC content:
 
-```python
+```python3
 dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCT'
 c_count = dna.count('C')  # count is a string method
 g_count = dna.count('G')
@@ -3673,7 +3680,7 @@ print(gc_content)
 
 We use `def` do define our own function. It is followed by the name of the function (`gc_content`) and parameters it will take in parentheses. A colon is the last character on the `def` line. The parameter variables will be available for your code inside the function to use.
 
-```python
+```python3
 def gc_content(dna):   # give our function a name and parameter 'dna'
    c_count = dna.count('C')
    g_count = dna.count('G')
@@ -3688,14 +3695,14 @@ def gc_content(dna):   # give our function a name and parameter 'dna'
 
 This is just like any other python function. You write the name of the function with any variables you want to pass to the function in parentheses. In the example below the contents of `dna_string` get passed into `gc_content()`. Inside the function this data is passed to the variable `dna`.
 
-```python
+```python3
 dna_string = "GTACCTTGATTTCGTATTCTGAGAGGCTGCT"
 print(gc_content(dna_string))
 ```
 
 This code will print 0.45161290322580644 to the screen. You can save this value in a variable to use later in your code like this
 
-```python
+```python3
 dna_gc = gc_content('GTACCTTGATTTCGTATTCTGAGAGGCTGCT')
 ```
 
@@ -3703,7 +3710,7 @@ As you can see we can write a nice clear line of python to call this function an
 
 How could you convert the GC fraction to % GC. Use format()
 
-```python
+```python3
 dna_string = "GTACCTTGATTTCGTATTCTGAGAGGCTGCT"
 dna_gc = gc_content(dna_string)
 pc_gc = '{:.2%}'.format(dna_gc)
@@ -3712,7 +3719,7 @@ print('This sequence is' , pc_gc , 'GC')
 
 Here's the output
 
-```python
+```python3
 This sequence is 45.16% GC
 ```
 
@@ -3729,7 +3736,7 @@ This sequence is 45.16% GC
 
 You can name your argument variables anything you want, but they should describe the data they contain. The name needs to be consistent within your function. You could change `dna` to `seqeunce` like this
 
-```python
+```python3
 def gc_content(sequence):   # give our function a name and parameter 'sequence'
    c_count = sequence.count('C')
    g_count = sequence.count('G')
@@ -3742,7 +3749,7 @@ def gc_content(sequence):   # give our function a name and parameter 'sequence'
 
 Arguments can be named and these names can be used when the function is called. This name is called a 'keyword' 
 
-```python
+```python3
 >>> dna_string = "GTACCTTGATTTCGTATTCTGAGAGGCTGCT"
 >>> print(gc_content(dna_string))
 0.45161290322580644
@@ -3757,7 +3764,7 @@ Arguments can be named and these names can be used when the function is called. 
 
 As defined above, our function is expecting an argument (`dna`) in the definition. You get an error if you call the function without any parameters.
 
-```python
+```python3
 >>> gc_content()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -3767,7 +3774,7 @@ TypeError: gc_content() missing 1 required positional argument: 'dna'
 
 You can define default values for arguments when you define your function.
 
-```python
+```python3
 def gc_content(dna='A'):   # give our function a name and parameter 'dna'
    c_count = dna.count('C')
    g_count = dna.count('G')
@@ -3795,7 +3802,7 @@ Lambda expressions can be used to define simple (one-line) anonymous functions. 
 
 Here is a one line custom function, like the functions we have already talked about:
 
-```python
+```python3
 def get_first_codon(dna):
   return dna[0:3]
 
@@ -3806,7 +3813,7 @@ print(get_first_codon('ATGTTT'))
 
 Here is the same function written as a lambda
 
-```python
+```python3
 get_first_codon = lambda dna : dna[0:3]
 print(get_first_codon('ATGTTT'))
 ```
@@ -3821,7 +3828,7 @@ List comprehensions can often be used instead of lambdas and may be easier to re
 
 Almost all python variables are global. This means they are available everywhere in your code. The most important exception is variables thare are defined in functions which only exist inside their function. This is called 'local'. Remember that python blocks are defined as code at the same level of indentation.
 
-```python
+```python3
 ##!/usr/bin/env python3
 print('Before if block')
 x = 100
@@ -3859,7 +3866,7 @@ y= 10
 
 Inside a function, global variables are visible, but it's better to pass variables to a function as arguments
 
-```python
+```python3
 def show_n():
   print(n)
 n = 5
@@ -3868,7 +3875,7 @@ show_n()
 
 The output is this `5` as you would expect, but this is better programming practice. Why? We'll see a little later.
 
-```python
+```python3
 def show_n(n):
   print(n)
 n = 5
@@ -3879,7 +3886,7 @@ show_n(n)
 
 Variables inside functions are local and therefore can only been accessed from within the function block. This applies to arguments as well as variables defined inside a function.
 
-```python
+```python3
 ##!/usr/bin/env python3
 
 def set_local_x_to_five(x):
@@ -3930,7 +3937,7 @@ You can make a local variable global with the statement `global`. Now a variable
 
 Here is an example use of `global`. 
 
-```python
+```python3
 ##!/usr/bin/env python3
 
 def set_global_variable():
@@ -3972,7 +3979,7 @@ List of lists, often called a matrix are important for organizing and accessing 
 
 Here's a way to make a 3 x 3 table of values.
 
-```python
+```python3
 >>> M = [[1,2,3] , [4,5,6] , [7,8,9]]
 >>> M[1] # second row (starts with index 0)
 [4,5,6]
@@ -4003,7 +4010,7 @@ AA-TA
 
 The alignment in a list of lists.
 
-```python
+```python3
 aln = [
   ['A', 'T', '-', 'T', 'G'],
   ['A', 'A', 'T', 'A', 'G'],
@@ -4014,7 +4021,7 @@ aln = [
 
 Get the full length of one sequence:
 
-```python
+```python3
 >>> seq = aln[2]
 >>> seq
 ['T', '-', 'T', 'T', 'G']
@@ -4024,7 +4031,7 @@ Get the full length of one sequence:
 
 Retrieve the nucleotide at a particular position in a sequence.
 
-```python
+```python3
 >>> nt = aln[2][3]
 >>> nt
 'T'
@@ -4034,7 +4041,7 @@ Retrieve the nucleotide at a particular position in a sequence.
 
 Get every nucleotide in a single column:
 
-```python
+```python3
 >>> col = [seq[3] for seq in aln]
 >>> col
 ['T', 'A', 'T', 'T']
@@ -4046,7 +4053,7 @@ Get every nucleotide in a single column:
 
 You can nest dictionaries in lists as well:
 
-```python
+```python3
 >>> records = [
 ... {'seq' : 'actgctagt', 'accession' : 'ABC123', 'genetic_code' : 1},
 ... {'seq' : 'ttaggttta', 'accession' : 'XYZ456', 'genetic_code' : 1},
@@ -4066,7 +4073,7 @@ You can nest dictionaries in lists as well:
 
 	1. Create this list of a dictionaries:  
 
-```python
+```python3
 records = [
   {'seq' : 'actgctagt', 'accession' : 'ABC123', 'genetic_code' : 1},
   {'seq' : 'ttaggttta', 'accession' : 'XYZ456', 'genetic_code' : 1},
@@ -4085,7 +4092,7 @@ And, if you haven't guessed, you can nest lists in dictionaries
 
 Here is a dictionary of kmers. The key is the kmer and its values is a list of postions
 
-```python
+```python3
 >>> kmers = {'ggaa': [4, 10], 'aatt': [0, 6, 12], 'gaat': [5, 11], 'tgga':
 ... [3, 9], 'attg': [1, 7, 13], 'ttgg': [2, 8]}
 >>> kmers
@@ -4103,7 +4110,7 @@ Here is a dictionary of kmers. The key is the kmer and its values is a list of p
 
 1. Create this dictionary of lists: 
 
-   ```python
+   ```python3
    kmers = {'ggaa': [4, 10], 'aatt': [0, 6, 12], 'gaat': [5, 11], 'tgga' : [3, 9], 'attg': [1, 7, 13], 'ttgg': [2, 8]}
    ```
 
@@ -4114,7 +4121,7 @@ Here is a dictionary of kmers. The key is the kmer and its values is a list of p
 
 You can also use the `get()` method to retrieve records.
 
-```python
+```python3
 >>> kmers['ggaa']
 [4, 10]
 >>> kmers.get('ggaa')
@@ -4127,7 +4134,7 @@ You can also use the `get()` method to retrieve records.
 
 Dictionaries of dictionaries is my favorite!! You can do so many useful things with this data structure. Here we are storing a gene name and some different types of information about that gene, such as its, sequence, length, description, nucleotide composition and length.
 
-```python
+```python3
 >>> genes = {
 ... 'gene1' : {
 ...     'seq' : "TATGCC",
@@ -4167,7 +4174,7 @@ Dictionaries of dictionaries is my favorite!! You can do so many useful things w
 
 1. Create this dictionary of dictionaries:
 
-   ```python
+   ```python3
    {'gene1': {'nt_comp': {'C': 2, 'G': 1, 'A': 1, 'T': 2}, 'desc': 'something', 'len': 6, 'seq': 'TATGCC'}, 'gene2': {'nt_comp': {'C': 1, 'G': 1, 'A': 3, 'T': 1}, 'desc': 'something', 'len': 6, 'seq': 'CAAATG'}}
    ```
 
@@ -4179,7 +4186,7 @@ Dictionaries of dictionaries is my favorite!! You can do so many useful things w
    2. Use `count()` to get the count of each A, T, G, C.
    3. Store the counts in a dictionary similar to this example layout of a handy datastructure to store this information
 
-```python
+```python3
 seqs[geneName][nucleotide]=count
 
 seqs['geneA']['A'] = 2
@@ -4204,7 +4211,7 @@ Below is an example of building a list with some values of type list and some va
 
 In the interpreter:
 
-```python
+```python3
 >>> new_data = []
 >>> new_data
 []
@@ -4259,7 +4266,7 @@ The subprocess module had a function called `run()` that can be used to
 
 Let's run a command that we know will not have any errors:
 
-```python
+```python3
 >>> import subprocess
 >>>
 >>> cmd = subprocess.run(args=["ls" ,"-l" , "seq.nt" ] , stdout = subprocess.PIPE, stderr=subprocess.PIPE)
@@ -4284,7 +4291,7 @@ Let's run a command that we know will not have any errors:
 
 Let's see what happens when we introduce a problem. 'seq.aa' does not exist.
 
-```python
+```python3
 >>> cmd = subprocess.run(args=["ls" ,"-l" , "seq.nt" , "seq.aa"] , stdout = subprocess.PIPE, stderr=subprocess.PIPE
 >>> cmd.stdout.decode('utf-8')
 '-rw-r--r--  1 smr  SGC\\Domain Users  142 Feb 28 13:22 seq.nt\n'
@@ -4306,7 +4313,7 @@ Let's see what happens when we introduce a problem. 'seq.aa' does not exist.
 
 If you use the option shell=True,  you can use a complete command, not broken into components like above
 
-```python
+```python3
 >>> cmd = subprocess.run("echo atc | wc -c" , shell=True, stdout = subprocess.PIPE, stderr=subprocess.PIPE)
 >>> cmd.stdout.decode('utf-8')
 '       4\n'
@@ -4320,7 +4327,7 @@ If you use the option shell=True,  you can use a complete command, not broken in
 
 If the error code is good (0) then we can proceed, if the error code is bad (!=0) stop.
 
-```python
+```python3
 #!/usr/bin/env python3
 import subprocess
 import sys
@@ -4360,7 +4367,7 @@ Biopython is a collection of python modules that contain code for manipulating b
 
 ### Installing Biopython
 
-This is very straightforward once you have anaconda or minconda installed. I use miniconda because it's smaller. You will need the administrator password for the machine. If you don't have this, ask the person who does administration on your machine.
+This is very straightforward once you have anaconda or minconda/conda installed. I use miniconda because it's smaller. You will need the administrator password for the machine. 
 
 ```bash
 
@@ -4393,7 +4400,7 @@ conda-4.3.30-p 100% |#################################################| Time: 0:
 
 See if the install worked
 
-```python
+```python3
 python3
 >>> import Bio
 >>> print(Bio.__version__)
@@ -4420,7 +4427,7 @@ This is the core of biopython. And uses the Seq object. Seq is part of Bio. This
 
 Visit biopython.org to read about [Sequence objects](https://biopython.org/docs/latest/Tutorial/index.html#htoc16)
 
-```python
+```python3
 #!/usr/bin/env python3
 import Bio.Seq                          
 seqobj = Bio.Seq.Seq('ATGCGATCGAGC')     
@@ -4439,7 +4446,7 @@ ATGCGATCGAGC has 12 nucleotides
 
 Another way to import modules is with `from ... import ...` . This saves typing the Class name every time. Bio.Seq is the class name. Bio is the superclass. Seq is a subclass inside Bio. It's written Bio.Seq. Seq has several different subclasses, of which one is called Seq. So we have Bio.Seq.Seq. To make the creation simpler, we call Seq() after we import with `from ... import ...` like this
 
-```python
+```python3
 #!/usr/bin/env python3
 from Bio.Seq import Seq
 seqobj=Seq('ATGCGATCGAGC')
@@ -4478,7 +4485,7 @@ GTAATCAGAACAGAGGT
 
 Get help on the parse() method with 
 
-```python
+```python3
 >>> from Bio import SeqIO
 >>> help(SeqIO.parse)
 
@@ -4504,7 +4511,7 @@ You can also visit biopythorg.org to get help on [Parsing or Reading Sequences](
 
 Lets try it out!
 
-```python
+```python3
 >>> from Bio import SeqIO
 >>> filename = "files/seq.nt.fa"
 >>> for seq_record in SeqIO.parse(filename, "fasta"):
@@ -4538,7 +4545,7 @@ translation MLTKVSVRTCR*ATLKKETTCQIETINSAMEIRTTISLEIKIEITGTISLIT*CRIKGIINLIQVIRT
 
 Here's a script to read fasta records and print out some information
 
-```python
+```python3
 #!/usr/bin/env python3
 # assumes we are in the evop2026 directory
 from Bio import SeqIO
@@ -4571,7 +4578,7 @@ Length 209
 
 There are three ways of doing this that use up more memory if you want more flexibility. `Bio.SeqIO.to_dict()` is the most flexible but also reads the entire fasta file into memory as a python dictionary so might take a lot of time and memory.
 
-```python
+```python3
 >>> id_dict = SeqIO.to_dict(SeqIO.parse('files/seq.nt.fa', 'fasta'))
 >>> id_dict
 {'seq1': SeqRecord(seq=Seq('AAGAGCAGCTCGCGCTAATGTGATAGATGGCGGTAAAGTAAATGTCCTATGGGC...AAC', SingleLetterAlphabet()), id='seq1', name='seq1', description='seq1', dbxrefs=[]), 'seq2': SeqRecord(seq=Seq('GCCACAGAGCCTAGGACCCCAACCTAACCTAACCTAACCTAACCTACAGTTTGA...TCT', SingleLetterAlphabet()), id='seq2', name='seq2', description='seq2', dbxrefs=[]), 'seq3': SeqRecord(seq=Seq('ATGAAAGTTACATAAAGACTATTCGATGCATAAATAGTTCAGTTTTGAAAACTT...AAT', SingleLetterAlphabet()), id='seq3', name='seq3', description='seq3', dbxrefs=[]), 'seq4': SeqRecord(seq=Seq('ATGCTAACCAAAGTTTCAGTTCGGACGTGTCGATGAGCGACGCTCAAAAAGGAA...GGT', SingleLetterAlphabet()), id='seq4', name='seq4', description='seq4', dbxrefs=[])}
@@ -4582,7 +4589,7 @@ There are three ways of doing this that use up more memory if you want more flex
 
 Let's retrieve some info from our new dictionary
 
-```python
+```python3
 >>> id_dict['seq4']
 SeqRecord(seq=Seq('ATGCTAACCAAAGTTTCAGTTCGGACGTGTCGATGAGCGACGCTCAAAAAGGAA...GGT', SingleLetterAlphabet()), id='seq4', name='seq4', description='seq4', dbxrefs=[])
 >>> id_dict['seq4'].seq
@@ -4616,7 +4623,7 @@ Seq('ATGCTAACCAAAGTTTCAGTTCGGACGTGTCGATGAGCGACGCTCAAAAAGGAA...GGT', SingleLetter
 
 Visit biopython.org to read how [Sequences act like strings](https://biopython.org/docs/latest/Tutorial/index.html#htoc16#htoc18)
 
-```python
+```python3
 seqobj.count("A")  # counts how many As are in sequence
 seqobj.find("ATG") # find coordinate of ATG (-1 for not found)
 ```
@@ -4645,7 +4652,7 @@ Additional attributes:
 
 SeqRecord objects have .format() to convert to a string in various formats
 
-```python
+```python3
 >>> seq.format('fasta')
 '>seq1\nAAGAGCAGCTCGCGCTAATGTGATAGATGGCGGTAAAGTAAATGTCCTATGGGCCACCAA\nTTATGGTGTATGAGTGAATCTCTGGTCCGAGATTCACTGAGTAACTGCTGTACACAGTAG\nTAACACGTGGAGATCCCATAAGCTTCACGTGTGGTCCAATAAAACACTCCGTTGGTCAAC\n'
 
@@ -4657,7 +4664,7 @@ SeqRecord objects have .format() to convert to a string in various formats
 
 To read sequences from a genbank file instead, not much changes.
 
-```python
+```python3
 #!/usr/bin/env python3
 from Bio import SeqIO
 for seq_record in SeqIO.parse("files/sequence.gb", "genbank"):
@@ -4678,7 +4685,7 @@ Length 3193
 
 Many are straightforward, others are a little more complicated because the alphabet can't be determined from the data. It's usually easier to go from richer formats to simpler ones.
 
-```python
+```python3
 #!/usr/bin/env python3
 from Bio import SeqIO
 fasta_records = SeqIO.parse("files/seq.nt.fa", "fasta")  
@@ -4699,7 +4706,7 @@ seq4    ATGCTAACCAAAGTTTCAGTTCGGACGTGTCGATGAGCGACGCTCAAAAAGGAAACAACATGCCAAATAGAA
 
 Even easier is the convert() method. Let's try fastq to fasta.
 
-```python
+```python3
 #!/usr/bin/env python3
 from Bio import SeqIO
 fasta_records = SeqIO.convert('files/sample.fastq', 'fastq', 'files/sample.converted.fa', 'fasta')
@@ -4717,7 +4724,7 @@ You can get biopython to run the blast for you too. See `Bio.NCBIWWW`
 
 To parse the output, you'll write something like this
 
-```python
+```python3
 >>> from Bio.Blast import NCBIXML
 >>> result_handle = open("files/test.blastout.xml")
 >>> blast_records = NCBIXML.parse(result_handle)
