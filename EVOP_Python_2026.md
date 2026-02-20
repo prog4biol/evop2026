@@ -1601,7 +1601,7 @@ Let's round a floating point number to decimal places, starting with more than n
              # they are f-strings, after all, so this makes sense
 >>> f'{3.141592653589793:.4f}'
 '3.1416'
->>> f'{3.141592653589793:.4f}'
+>>> f'{3.141592653589793:.2f}'
 '3.14'
 ```
 f-strings allow you to embed expressions inside string literals
