@@ -1422,11 +1422,12 @@ You can also find out the methods by entering the data type at the python interp
 >>>list.
 >>>tuple.
 >>>dict.
-```
+
 'dict.clear(       dict.get(         dict.mro(        dict.setdefault('
 'dict.copy(        dict.items(       dict.pop(         dict.update('
 'dict.fromkeys(    dict.keys(        dict.popitem(     dict.values('
 
+```
 Hit tab completion after all of the above to see what follows
 
 ##### Find and Count
