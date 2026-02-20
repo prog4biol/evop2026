@@ -1415,11 +1415,14 @@ Notice the difference in format. The ones without the underscores are the ones t
 ```
 
 You can also find out the methods by entering the data type at the python interpreter, followed by a "." and hitting tab completion:  
-int.
-string. 
+
+```
+int. 
+string.  
 list.
 tuple.
 dict.
+```
 
 Hit tab completion after all of the above to see what follows
 
