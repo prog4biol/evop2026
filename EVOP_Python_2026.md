@@ -1417,12 +1417,15 @@ Notice the difference in format. The ones without the underscores are the ones t
 You can also find out the methods by entering the data type at the python interpreter, followed by a "." and hitting tab completion:  
 
 ```
-int. 
-string.  
-list.
-tuple.
-dict.
+>>>int. 
+>>>string.  
+>>>list.
+>>>tuple.
+>>>dict.
 ```
+dict.clear(       dict.get(         dict.mro()        dict.setdefault(
+dict.copy(        dict.items(       dict.pop(         dict.update(
+dict.fromkeys(    dict.keys(        dict.popitem(     dict.values(
 
 Hit tab completion after all of the above to see what follows
 
