@@ -1,5 +1,5 @@
 # Python for EVOP2026
-### Deb Triant<br>University of Virginia
+### Deb Triant<br>
 
 ### Created by Sofia Robb  
 
