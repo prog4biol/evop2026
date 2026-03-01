@@ -1,4 +1,12 @@
 #!usr/bin/env python3
+# N50L50_commented.py
+# Genome assembly exercise to parse a fasta file, count counts and calculate nucleotide content
+# parse fasta file
+# how many contigs are there?
+# what is the nucleotide content of both masked(lowercase) and not (upper)?
+# what proportion of genome is comprised of gaps (NNN)?
+# 23 February 2026
+
 
 # importing sys module to use sys.argv to take in argument from command line
 import sys
@@ -43,8 +51,5 @@ for nucleotide in content.keys():
 # proportion of genome comprised of gaps (N)
 print(f'proportion of gaps: {content['N'] / len(total):.2%}')
 
-# parse fasta file
-# how many contigs are there?
-# what is the nucleotide content of both masked(lowercase) and not (upper)
-# what proportion of genome is comprised of gaps (NNN)?
+
 
